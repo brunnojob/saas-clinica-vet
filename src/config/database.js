@@ -1,16 +1,15 @@
-// Configuração para MongoDB
 const mongoose = require('mongoose');
 
 const connectDB = async () => {
   try {
-    const conn = await mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/brunnoclinic', {
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
-    });
-
-    console.log(`MongoDB Connected: ${conn.connection.host}`);
+    const conn = await mongoose.connect(
+      process.env.MONGODB_URI || 'mongodb://localhost:27017/brunnoclinic',
+      {
+        useNewUrlParser: true,
+        useUnifiedTopology: true,
+      },
+    );
   } catch (error) {
-    console.error('Erro ao conectar com MongoDB:', error);
     process.exit(1);
   }
 };

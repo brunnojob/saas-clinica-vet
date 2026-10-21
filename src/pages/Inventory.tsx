@@ -1,11 +1,19 @@
-import React, { useState } from 'react';
-import { Package, AlertTriangle, Plus, Search, Filter, TrendingDown, TrendingUp } from 'lucide-react';
+import {
+  AlertTriangle,
+  Package,
+  Plus,
+  Search,
+  TrendingDown,
+  TrendingUp,
+} from 'lucide-react';
+import { useState } from 'react';
 import { InventoryForm } from '../components/Inventory/InventoryForm';
-import { InventoryItem } from '../types';
 import { useInventory } from '../hooks/useDatabase';
+import { InventoryItem } from '../types';
 
 export function Inventory() {
-  const { items, loading, error, createItem, updateItem, deleteItem } = useInventory();
+  const { items, loading, error, createItem, updateItem, deleteItem } =
+    useInventory();
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedType, setSelectedType] = useState('all');
   const [showLowStock, setShowLowStock] = useState(false);
@@ -13,13 +21,14 @@ export function Inventory() {
   const [formType, setFormType] = useState<'add' | 'in' | 'out'>('add');
   const [editingItem, setEditingItem] = useState<InventoryItem | undefined>();
 
-  const filteredItems = items.filter(item => {
-    const matchesSearch = item.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
-                         item.category.toLowerCase().includes(searchTerm.toLowerCase());
-    
+  const filteredItems = items.filter((item) => {
+    const matchesSearch =
+      item.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      item.category.toLowerCase().includes(searchTerm.toLowerCase());
+
     const matchesType = selectedType === 'all' || item.type === selectedType;
     const matchesStock = !showLowStock || item.quantity <= item.minQuantity;
-    
+
     return matchesSearch && matchesType && matchesStock;
   });
 
@@ -56,18 +65,18 @@ export function Inventory() {
           await createItem(data as Omit<InventoryItem, 'id'>);
         }
       } else if (formType === 'in' && editingItem) {
-        await updateItem(editingItem.id, { 
-          quantity: editingItem.quantity + (data.quantity || 0) 
+        await updateItem(editingItem.id, {
+          quantity: editingItem.quantity + (data.quantity || 0),
         });
       } else if (formType === 'out' && editingItem) {
-        await updateItem(editingItem.id, { 
-          quantity: Math.max(0, editingItem.quantity - (data.quantity || 0)) 
+        await updateItem(editingItem.id, {
+          quantity: Math.max(0, editingItem.quantity - (data.quantity || 0)),
         });
       }
-      
+
       setIsFormOpen(false);
       setEditingItem(undefined);
-    } catch (err) {
+    } catch {
       alert('Erro ao salvar item');
     }
   };
@@ -76,7 +85,7 @@ export function Inventory() {
     if (confirm('Tem certeza que deseja excluir este item?')) {
       try {
         await deleteItem(id);
-      } catch (err) {
+      } catch {
         alert('Erro ao excluir item');
       }
     }
@@ -84,27 +93,42 @@ export function Inventory() {
 
   const getStockStatus = (item: InventoryItem) => {
     if (item.quantity <= 0) {
-      return { status: 'out', color: 'bg-red-100 text-red-800 border-red-200', text: 'Sem estoque' };
+      return {
+        status: 'out',
+        color: 'bg-red-100 text-red-800 border-red-200',
+        text: 'Sem estoque',
+      };
     } else if (item.quantity <= item.minQuantity) {
-      return { status: 'low', color: 'bg-yellow-100 text-yellow-800 border-yellow-200', text: 'Estoque baixo' };
+      return {
+        status: 'low',
+        color: 'bg-yellow-100 text-yellow-800 border-yellow-200',
+        text: 'Estoque baixo',
+      };
     } else {
-      return { status: 'ok', color: 'bg-green-100 text-green-800 border-green-200', text: 'Em estoque' };
+      return {
+        status: 'ok',
+        color: 'bg-green-100 text-green-800 border-green-200',
+        text: 'Em estoque',
+      };
     }
   };
 
   const getExpirationStatus = (expirationDate?: Date) => {
     if (!expirationDate) return null;
-    
+
     const daysUntilExpiry = Math.ceil(
-      (expirationDate.getTime() - new Date().getTime()) / (1000 * 60 * 60 * 24)
+      (expirationDate.getTime() - new Date().getTime()) / (1000 * 60 * 60 * 24),
     );
-    
+
     if (daysUntilExpiry <= 0) {
       return { color: 'text-red-600', text: 'Vencido' };
     } else if (daysUntilExpiry <= 30) {
-      return { color: 'text-yellow-600', text: `Vence em ${daysUntilExpiry} dias` };
+      return {
+        color: 'text-yellow-600',
+        text: `Vence em ${daysUntilExpiry} dias`,
+      };
     }
-    
+
     return null;
   };
 
@@ -136,15 +160,18 @@ export function Inventory() {
 
   return (
     <div className="space-y-6">
-      {/* Header */}
       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
         <div>
-          <h1 className="text-2xl font-bold text-gray-900">Controle de Estoque</h1>
-          <p className="text-gray-600">Gerencie medicamentos, vacinas e materiais</p>
+          <h1 className="text-2xl font-bold text-gray-900">
+            Controle de Estoque
+          </h1>
+          <p className="text-gray-600">
+            Gerencie medicamentos, vacinas e materiais
+          </p>
         </div>
-        
+
         <div className="flex space-x-3">
-          <button 
+          <button
             onClick={() => {
               setFormType('in');
               setEditingItem(undefined);
@@ -155,7 +182,7 @@ export function Inventory() {
             <TrendingUp className="w-5 h-5 mr-2" />
             Entrada
           </button>
-          <button 
+          <button
             onClick={() => {
               setFormType('out');
               setEditingItem(undefined);
@@ -166,7 +193,7 @@ export function Inventory() {
             <TrendingDown className="w-5 h-5 mr-2" />
             Saída
           </button>
-          <button 
+          <button
             onClick={handleAddItem}
             className="flex items-center px-4 py-2 bg-primary-500 text-white rounded-lg hover:bg-primary-600 transition-colors"
           >
@@ -176,52 +203,64 @@ export function Inventory() {
         </div>
       </div>
 
-      {/* Stats Cards */}
       <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
         <div className="bg-white rounded-xl border border-gray-200 p-6">
           <div className="flex items-center justify-between">
             <div>
-              <p className="text-sm font-medium text-gray-600">Total de Itens</p>
+              <p className="text-sm font-medium text-gray-600">
+                Total de Itens
+              </p>
               <p className="text-2xl font-bold text-gray-900">{items.length}</p>
             </div>
             <Package className="w-8 h-8 text-primary-500" />
           </div>
         </div>
-        
+
         <div className="bg-white rounded-xl border border-gray-200 p-6">
           <div className="flex items-center justify-between">
             <div>
               <p className="text-sm font-medium text-gray-600">Estoque Baixo</p>
               <p className="text-2xl font-bold text-yellow-600">
-                {items.filter(item => item.quantity <= item.minQuantity).length}
+                {
+                  items.filter((item) => item.quantity <= item.minQuantity)
+                    .length
+                }
               </p>
             </div>
             <AlertTriangle className="w-8 h-8 text-yellow-500" />
           </div>
         </div>
-        
+
         <div className="bg-white rounded-xl border border-gray-200 p-6">
           <div className="flex items-center justify-between">
             <div>
               <p className="text-sm font-medium text-gray-600">Vencendo</p>
               <p className="text-2xl font-bold text-red-600">
-                {items.filter(item => {
-                  if (!item.expirationDate) return false;
-                  const days = Math.ceil((item.expirationDate.getTime() - new Date().getTime()) / (1000 * 60 * 60 * 24));
-                  return days <= 30 && days > 0;
-                }).length}
+                {
+                  items.filter((item) => {
+                    if (!item.expirationDate) return false;
+                    const days = Math.ceil(
+                      (item.expirationDate.getTime() - new Date().getTime()) /
+                        (1000 * 60 * 60 * 24),
+                    );
+                    return days <= 30 && days > 0;
+                  }).length
+                }
               </p>
             </div>
             <AlertTriangle className="w-8 h-8 text-red-500" />
           </div>
         </div>
-        
+
         <div className="bg-white rounded-xl border border-gray-200 p-6">
           <div className="flex items-center justify-between">
             <div>
               <p className="text-sm font-medium text-gray-600">Valor Total</p>
               <p className="text-2xl font-bold text-green-600">
-                R$ {items.reduce((sum, item) => sum + (item.cost * item.quantity), 0).toFixed(2)}
+                R${' '}
+                {items
+                  .reduce((sum, item) => sum + item.cost * item.quantity, 0)
+                  .toFixed(2)}
               </p>
             </div>
             <TrendingUp className="w-8 h-8 text-green-500" />
@@ -229,7 +268,6 @@ export function Inventory() {
         </div>
       </div>
 
-      {/* Filters */}
       <div className="bg-white rounded-xl border border-gray-200 p-6">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
           <div className="md:col-span-2">
@@ -244,7 +282,7 @@ export function Inventory() {
               />
             </div>
           </div>
-          
+
           <div>
             <select
               value={selectedType}
@@ -258,7 +296,7 @@ export function Inventory() {
               <option value="equipment">Equipamentos</option>
             </select>
           </div>
-          
+
           <div>
             <label className="flex items-center">
               <input
@@ -267,13 +305,14 @@ export function Inventory() {
                 onChange={(e) => setShowLowStock(e.target.checked)}
                 className="mr-2 rounded border-gray-300 text-primary-600 focus:ring-primary-500"
               />
-              <span className="text-sm text-gray-700">Apenas estoque baixo</span>
+              <span className="text-sm text-gray-700">
+                Apenas estoque baixo
+              </span>
             </label>
           </div>
         </div>
       </div>
 
-      {/* Inventory Items */}
       <div className="bg-white rounded-xl border border-gray-200">
         <div className="p-6 border-b border-gray-200">
           <h3 className="text-lg font-semibold text-gray-900">
@@ -290,9 +329,7 @@ export function Inventory() {
             <h3 className="text-lg font-medium text-gray-900 mb-2">
               Nenhum item encontrado
             </h3>
-            <p className="text-gray-600">
-              Tente ajustar os filtros de busca
-            </p>
+            <p className="text-gray-600">Tente ajustar os filtros de busca</p>
           </div>
         ) : (
           <div className="overflow-x-auto">
@@ -325,18 +362,26 @@ export function Inventory() {
               <tbody className="bg-white divide-y divide-gray-200">
                 {filteredItems.map((item) => {
                   const stockStatus = getStockStatus(item);
-                  const expirationStatus = getExpirationStatus(item.expirationDate);
-                  
+                  const expirationStatus = getExpirationStatus(
+                    item.expirationDate,
+                  );
+
                   return (
                     <tr key={item.id} className="hover:bg-gray-50">
                       <td className="px-6 py-4 whitespace-nowrap">
                         <div>
-                          <div className="text-sm font-medium text-gray-900">{item.name}</div>
-                          <div className="text-sm text-gray-500">{item.category}</div>
+                          <div className="text-sm font-medium text-gray-900">
+                            {item.name}
+                          </div>
+                          <div className="text-sm text-gray-500">
+                            {item.category}
+                          </div>
                         </div>
                       </td>
                       <td className="px-6 py-4 whitespace-nowrap">
-                        <span className="text-sm text-gray-900">{formatItemType(item.type)}</span>
+                        <span className="text-sm text-gray-900">
+                          {formatItemType(item.type)}
+                        </span>
                       </td>
                       <td className="px-6 py-4 whitespace-nowrap">
                         <div className="text-sm text-gray-900">
@@ -347,7 +392,9 @@ export function Inventory() {
                         </div>
                       </td>
                       <td className="px-6 py-4 whitespace-nowrap">
-                        <span className={`inline-flex px-2 py-1 text-xs font-semibold rounded-full border ${stockStatus.color}`}>
+                        <span
+                          className={`inline-flex px-2 py-1 text-xs font-semibold rounded-full border ${stockStatus.color}`}
+                        >
                           {stockStatus.text}
                         </span>
                       </td>
@@ -358,7 +405,9 @@ export function Inventory() {
                               {item.expirationDate.toLocaleDateString('pt-BR')}
                             </div>
                             {expirationStatus && (
-                              <div className={`text-xs ${expirationStatus.color}`}>
+                              <div
+                                className={`text-xs ${expirationStatus.color}`}
+                              >
                                 {expirationStatus.text}
                               </div>
                             )}
@@ -377,25 +426,25 @@ export function Inventory() {
                       </td>
                       <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
                         <div className="flex space-x-2">
-                          <button 
+                          <button
                             onClick={() => handleEditItem(item)}
                             className="text-primary-600 hover:text-primary-900"
                           >
                             Editar
                           </button>
-                          <button 
+                          <button
                             onClick={() => handleStockIn(item)}
                             className="text-secondary-600 hover:text-secondary-900"
                           >
                             Entrada
                           </button>
-                          <button 
+                          <button
                             onClick={() => handleStockOut(item)}
                             className="text-accent-600 hover:text-accent-900"
                           >
                             Saída
                           </button>
-                          <button 
+                          <button
                             onClick={() => handleDeleteItem(item.id)}
                             className="text-red-600 hover:text-red-900"
                           >
@@ -412,17 +461,18 @@ export function Inventory() {
         )}
       </div>
 
-      {/* Inventory Form Modal */}
-      <InventoryForm
-        item={editingItem}
-        type={formType}
-        isOpen={isFormOpen}
-        onSubmit={handleSubmitItem}
-        onCancel={() => {
-          setIsFormOpen(false);
-          setEditingItem(undefined);
-        }}
-      />
+      {isFormOpen && (
+        <InventoryForm
+          item={editingItem}
+          type={formType}
+          isOpen={isFormOpen}
+          onSubmit={handleSubmitItem}
+          onCancel={() => {
+            setIsFormOpen(false);
+            setEditingItem(undefined);
+          }}
+        />
+      )}
     </div>
   );
 }

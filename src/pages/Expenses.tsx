@@ -1,35 +1,61 @@
-import React, { useState } from 'react';
-import { Calculator, Plus, Search, Filter, TrendingUp, TrendingDown, DollarSign } from 'lucide-react';
+import {
+  Calculator,
+  DollarSign,
+  Plus,
+  Search,
+  TrendingDown,
+  TrendingUp,
+} from 'lucide-react';
+import { useState } from 'react';
 import { ExpenseForm } from '../components/Expenses/ExpenseForm';
+import { useAnimals, useAppointments, useExpenses } from '../hooks/useDatabase';
 import { Expense } from '../types';
-import { useExpenses, useAppointments, useAnimals } from '../hooks/useDatabase';
 
 export function Expenses() {
-  const { expenses, loading, error, createExpense, updateExpense, deleteExpense } = useExpenses();
+  const {
+    expenses,
+    loading,
+    error,
+    createExpense,
+    updateExpense,
+    deleteExpense,
+  } = useExpenses();
   const { appointments } = useAppointments();
   const { animals } = useAnimals();
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('all');
-  const [selectedMonth, setSelectedMonth] = useState(new Date().toISOString().slice(0, 7));
+  const [selectedMonth, setSelectedMonth] = useState(
+    new Date().toISOString().slice(0, 7),
+  );
   const [isFormOpen, setIsFormOpen] = useState(false);
   const [editingExpense, setEditingExpense] = useState<Expense | undefined>();
 
-  const filteredExpenses = expenses.filter(expense => {
-    const matchesSearch = expense.description.toLowerCase().includes(searchTerm.toLowerCase());
-    const matchesCategory = selectedCategory === 'all' || expense.category === selectedCategory;
+  const filteredExpenses = expenses.filter((expense) => {
+    const matchesSearch = expense.description
+      .toLowerCase()
+      .includes(searchTerm.toLowerCase());
+    const matchesCategory =
+      selectedCategory === 'all' || expense.category === selectedCategory;
     const expenseMonth = expense.date.toISOString().slice(0, 7);
     const matchesMonth = expenseMonth === selectedMonth;
-    
+
     return matchesSearch && matchesCategory && matchesMonth;
   });
 
-  const totalExpenses = filteredExpenses.reduce((sum, expense) => sum + expense.amount, 0);
-  const averageExpense = filteredExpenses.length > 0 ? totalExpenses / filteredExpenses.length : 0;
+  const totalExpenses = filteredExpenses.reduce(
+    (sum, expense) => sum + expense.amount,
+    0,
+  );
+  const averageExpense =
+    filteredExpenses.length > 0 ? totalExpenses / filteredExpenses.length : 0;
 
-  const expensesByCategory = filteredExpenses.reduce((acc, expense) => {
-    acc[expense.category] = (acc[expense.category] || 0) + expense.amount;
-    return acc;
-  }, {} as Record<string, number>);
+  const expensesByCategory = filteredExpenses.reduce(
+    (acc, expense) => {
+      acc[expense.category] = (acc[expense.category] || 0) + expense.amount;
+      return acc;
+    },
+    {} as Record<string, number>,
+  );
 
   const handleAddExpense = () => {
     setEditingExpense(undefined);
@@ -45,7 +71,7 @@ export function Expenses() {
     if (confirm('Tem certeza que deseja excluir este gasto?')) {
       try {
         await deleteExpense(id);
-      } catch (err) {
+      } catch {
         alert('Erro ao excluir gasto');
       }
     }
@@ -60,7 +86,7 @@ export function Expenses() {
       }
       setIsFormOpen(false);
       setEditingExpense(undefined);
-    } catch (err) {
+    } catch {
       alert('Erro ao salvar gasto');
     }
   };
@@ -94,14 +120,15 @@ export function Expenses() {
 
   return (
     <div className="space-y-6">
-      {/* Header */}
       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
         <div>
           <h1 className="text-2xl font-bold text-gray-900">Gestão de Gastos</h1>
-          <p className="text-gray-600">Controle financeiro por atendimento e categoria</p>
+          <p className="text-gray-600">
+            Controle financeiro por atendimento e categoria
+          </p>
         </div>
-        
-        <button 
+
+        <button
           onClick={handleAddExpense}
           className="flex items-center px-4 py-2 bg-primary-500 text-white rounded-lg hover:bg-primary-600 transition-colors"
         >
@@ -110,47 +137,61 @@ export function Expenses() {
         </button>
       </div>
 
-      {/* Stats Cards */}
       <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
         <div className="bg-white rounded-xl border border-gray-200 p-6">
           <div className="flex items-center justify-between">
             <div>
               <p className="text-sm font-medium text-gray-600">Total do Mês</p>
-              <p className="text-2xl font-bold text-gray-900">R$ {totalExpenses.toFixed(2)}</p>
+              <p className="text-2xl font-bold text-gray-900">
+                R$ {totalExpenses.toFixed(2)}
+              </p>
             </div>
             <DollarSign className="w-8 h-8 text-primary-500" />
           </div>
         </div>
-        
+
         <div className="bg-white rounded-xl border border-gray-200 p-6">
           <div className="flex items-center justify-between">
             <div>
-              <p className="text-sm font-medium text-gray-600">Média por Gasto</p>
-              <p className="text-2xl font-bold text-secondary-600">R$ {averageExpense.toFixed(2)}</p>
+              <p className="text-sm font-medium text-gray-600">
+                Média por Gasto
+              </p>
+              <p className="text-2xl font-bold text-secondary-600">
+                R$ {averageExpense.toFixed(2)}
+              </p>
             </div>
             <TrendingUp className="w-8 h-8 text-secondary-500" />
           </div>
         </div>
-        
+
         <div className="bg-white rounded-xl border border-gray-200 p-6">
           <div className="flex items-center justify-between">
             <div>
-              <p className="text-sm font-medium text-gray-600">Total de Gastos</p>
-              <p className="text-2xl font-bold text-accent-600">{filteredExpenses.length}</p>
+              <p className="text-sm font-medium text-gray-600">
+                Total de Gastos
+              </p>
+              <p className="text-2xl font-bold text-accent-600">
+                {filteredExpenses.length}
+              </p>
             </div>
             <Calculator className="w-8 h-8 text-accent-500" />
           </div>
         </div>
-        
+
         <div className="bg-white rounded-xl border border-gray-200 p-6">
           <div className="flex items-center justify-between">
             <div>
-              <p className="text-sm font-medium text-gray-600">Maior Categoria</p>
+              <p className="text-sm font-medium text-gray-600">
+                Maior Categoria
+              </p>
               <p className="text-lg font-bold text-green-600">
-                {Object.keys(expensesByCategory).length > 0 
-                  ? formatCategory(Object.entries(expensesByCategory).sort(([,a], [,b]) => b - a)[0][0])
-                  : 'N/A'
-                }
+                {Object.keys(expensesByCategory).length > 0
+                  ? formatCategory(
+                      Object.entries(expensesByCategory).sort(
+                        ([, a], [, b]) => b - a,
+                      )[0][0],
+                    )
+                  : 'N/A'}
               </p>
             </div>
             <TrendingDown className="w-8 h-8 text-green-500" />
@@ -158,7 +199,6 @@ export function Expenses() {
         </div>
       </div>
 
-      {/* Filters */}
       <div className="bg-white rounded-xl border border-gray-200 p-6">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           <div>
@@ -172,7 +212,7 @@ export function Expenses() {
               className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
             />
           </div>
-          
+
           <div>
             <label className="block text-sm font-medium text-gray-700 mb-2">
               Categoria
@@ -190,7 +230,7 @@ export function Expenses() {
               <option value="other">Outros</option>
             </select>
           </div>
-          
+
           <div>
             <label className="block text-sm font-medium text-gray-700 mb-2">
               Buscar
@@ -209,9 +249,10 @@ export function Expenses() {
         </div>
       </div>
 
-      {/* Expenses by Category */}
       <div className="bg-white rounded-xl border border-gray-200 p-6">
-        <h3 className="text-lg font-semibold text-gray-900 mb-4">Gastos por Categoria</h3>
+        <h3 className="text-lg font-semibold text-gray-900 mb-4">
+          Gastos por Categoria
+        </h3>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {Object.entries(expensesByCategory).map(([category, amount]) => (
             <div key={category} className="bg-gray-50 rounded-lg p-4">
@@ -224,7 +265,7 @@ export function Expenses() {
                 </span>
               </div>
               <div className="mt-2 bg-gray-200 rounded-full h-2">
-                <div 
+                <div
                   className="bg-primary-500 h-2 rounded-full"
                   style={{ width: `${(amount / totalExpenses) * 100}%` }}
                 ></div>
@@ -234,11 +275,14 @@ export function Expenses() {
         </div>
       </div>
 
-      {/* Expenses List */}
       <div className="bg-white rounded-xl border border-gray-200">
         <div className="p-6 border-b border-gray-200">
           <h3 className="text-lg font-semibold text-gray-900">
-            Lista de Gastos - {new Date(selectedMonth).toLocaleDateString('pt-BR', { month: 'long', year: 'numeric' })}
+            Lista de Gastos -{' '}
+            {new Date(selectedMonth).toLocaleDateString('pt-BR', {
+              month: 'long',
+              year: 'numeric',
+            })}
           </h3>
           <p className="text-sm text-gray-600 mt-1">
             {filteredExpenses.length} gasto(s) encontrado(s)
@@ -254,7 +298,7 @@ export function Expenses() {
             <p className="text-gray-600 mb-6">
               Não há gastos registrados para os filtros selecionados
             </p>
-            <button 
+            <button
               onClick={handleAddExpense}
               className="inline-flex items-center px-4 py-2 bg-primary-500 text-white rounded-lg hover:bg-primary-600 transition-colors"
             >
@@ -289,16 +333,22 @@ export function Expenses() {
               </thead>
               <tbody className="bg-white divide-y divide-gray-200">
                 {filteredExpenses.map((expense) => {
-                  const appointment = appointments.find(a => a.id === expense.appointmentId);
-                  const animal = appointment ? animals.find(a => a.id === appointment.medicalRecordId) : null;
-                  
+                  const appointment = appointments.find(
+                    (a) => a.id === expense.appointmentId,
+                  );
+                  const animal = appointment
+                    ? animals.find((a) => a.id === appointment.medicalRecordId)
+                    : null;
+
                   return (
                     <tr key={expense.id} className="hover:bg-gray-50">
                       <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
                         {expense.date.toLocaleDateString('pt-BR')}
                       </td>
                       <td className="px-6 py-4 whitespace-nowrap">
-                        <div className="text-sm font-medium text-gray-900">{expense.description}</div>
+                        <div className="text-sm font-medium text-gray-900">
+                          {expense.description}
+                        </div>
                       </td>
                       <td className="px-6 py-4 whitespace-nowrap">
                         <span className="inline-flex px-2 py-1 text-xs font-semibold rounded-full bg-gray-100 text-gray-800">
@@ -309,17 +359,19 @@ export function Expenses() {
                         R$ {expense.amount.toFixed(2)}
                       </td>
                       <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                        {animal ? `${animal.name} - ${appointment?.description}` : 'N/A'}
+                        {animal
+                          ? `${animal.name} - ${appointment?.description}`
+                          : 'N/A'}
                       </td>
                       <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
                         <div className="flex space-x-2">
-                          <button 
+                          <button
                             onClick={() => handleEditExpense(expense)}
                             className="text-primary-600 hover:text-primary-900"
                           >
                             Editar
                           </button>
-                          <button 
+                          <button
                             onClick={() => handleDeleteExpense(expense.id)}
                             className="text-red-600 hover:text-red-900"
                           >
@@ -336,16 +388,17 @@ export function Expenses() {
         )}
       </div>
 
-      {/* Expense Form Modal */}
-      <ExpenseForm
-        expense={editingExpense}
-        isOpen={isFormOpen}
-        onSubmit={handleSubmitExpense}
-        onCancel={() => {
-          setIsFormOpen(false);
-          setEditingExpense(undefined);
-        }}
-      />
+      {isFormOpen && (
+        <ExpenseForm
+          expense={editingExpense}
+          isOpen={isFormOpen}
+          onSubmit={handleSubmitExpense}
+          onCancel={() => {
+            setIsFormOpen(false);
+            setEditingExpense(undefined);
+          }}
+        />
+      )}
     </div>
   );
 }

@@ -1,9 +1,13 @@
-import React from 'react';
-import { Heart, Calendar, Package, DollarSign, TrendingUp, Users } from 'lucide-react';
-import { StatsCard } from '../components/Dashboard/StatsCard';
-import { RecentAppointments } from '../components/Dashboard/RecentAppointments';
+import { Calendar, DollarSign, Heart, Package } from 'lucide-react';
 import { InventoryAlerts } from '../components/Dashboard/InventoryAlerts';
-import { useAnimals, useAppointments, useInventory, useExpenses } from '../hooks/useDatabase';
+import { RecentAppointments } from '../components/Dashboard/RecentAppointments';
+import { StatsCard } from '../components/Dashboard/StatsCard';
+import {
+  useAnimals,
+  useAppointments,
+  useExpenses,
+  useInventory,
+} from '../hooks/useDatabase';
 
 interface DashboardProps {
   onPageChange: (page: string) => void;
@@ -15,20 +19,30 @@ export function Dashboard({ onPageChange }: DashboardProps) {
   const { items, loading: inventoryLoading } = useInventory();
   const { expenses, loading: expensesLoading } = useExpenses();
 
-  const isLoading = animalsLoading || appointmentsLoading || inventoryLoading || expensesLoading;
+  const isLoading =
+    animalsLoading ||
+    appointmentsLoading ||
+    inventoryLoading ||
+    expensesLoading;
 
   const stats = {
-    totalAnimals: animals.length,
+    totalAnimals: animals.filter((animal) => animal.isActive).length,
     todayAppointments: appointments.filter(
-      a => a.date.toDateString() === new Date().toDateString()
+      (a) => a.date.toDateString() === new Date().toDateString(),
     ).length,
-    lowStockItems: items.filter(item => item.quantity <= item.minQuantity).length,
-    monthlyRevenue: expenses.reduce((sum, expense) => sum + expense.amount, 0),
+    lowStockItems: items.filter((item) => item.quantity <= item.minQuantity)
+      .length,
+    monthlyExpenses: expenses
+      .filter(
+        (expense) =>
+          expense.date.getFullYear() === new Date().getFullYear() &&
+          expense.date.getMonth() === new Date().getMonth(),
+      )
+      .reduce((sum, expense) => sum + expense.amount, 0),
   };
 
   return (
     <div className="space-y-8">
-      {/* Welcome Header */}
       <div className="bg-gradient-to-r from-primary-500 to-secondary-500 rounded-xl p-6 text-white">
         <h1 className="text-2xl font-bold mb-2">Bem-vindo</h1>
         <p className="text-primary-100">
@@ -36,12 +50,11 @@ export function Dashboard({ onPageChange }: DashboardProps) {
         </p>
       </div>
 
-      {/* Stats Grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         <StatsCard
           title="Pacientes Ativos"
-          value={isLoading ? "..." : stats.totalAnimals}
-          change="+2 esta semana"
+          value={isLoading ? '...' : stats.totalAnimals}
+
           changeType="positive"
           icon={Heart}
           color="primary"
@@ -49,8 +62,8 @@ export function Dashboard({ onPageChange }: DashboardProps) {
 
         <StatsCard
           title="Atendimentos Hoje"
-          value={isLoading ? "..." : stats.todayAppointments}
-          change="3 agendados"
+          value={isLoading ? '...' : stats.todayAppointments}
+
           changeType="neutral"
           icon={Calendar}
           color="secondary"
@@ -58,16 +71,16 @@ export function Dashboard({ onPageChange }: DashboardProps) {
 
         <StatsCard
           title="Itens em Falta"
-          value={isLoading ? "..." : stats.lowStockItems}
-          change={stats.lowStockItems > 0 ? "Requer atenção" : "Tudo ok"}
-          changeType={stats.lowStockItems > 0 ? "negative" : "positive"}
+          value={isLoading ? '...' : stats.lowStockItems}
+          change={stats.lowStockItems > 0 ? 'Requer atenção' : 'Tudo ok'}
+          changeType={stats.lowStockItems > 0 ? 'negative' : 'positive'}
           icon={Package}
           color="warning"
         />
 
         <StatsCard
-          title="Receita Mensal"
-          value={isLoading ? "..." : `R$ ${stats.monthlyRevenue.toFixed(2)}`}
+          title="Gastos do Mês"
+          value={isLoading ? '...' : `R$ ${stats.monthlyExpenses.toFixed(2)}`}
           change="+12% vs mês anterior"
           changeType="positive"
           icon={DollarSign}
@@ -75,15 +88,15 @@ export function Dashboard({ onPageChange }: DashboardProps) {
         />
       </div>
 
-      {/* Main Content Grid */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
         <RecentAppointments />
         <InventoryAlerts />
       </div>
 
-      {/* Quick Actions */}
       <div className="bg-white rounded-xl border border-gray-200 p-6">
-        <h3 className="text-lg font-semibold text-gray-900 mb-4">Ações Rápidas</h3>
+        <h3 className="text-lg font-semibold text-gray-900 mb-4">
+          Ações Rápidas
+        </h3>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           <button
             onClick={() => onPageChange('animals')}

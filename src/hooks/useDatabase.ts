@@ -1,12 +1,12 @@
-import { useState, useEffect } from 'react';
-import { 
-  usersService, 
-  animalsService, 
-  appointmentsService, 
-  inventoryService, 
-  expensesService 
+import { useEffect, useState } from 'react';
+import {
+  animalsService,
+  appointmentsService,
+  expensesService,
+  inventoryService,
+  usersService,
 } from '../services/database';
-import { User, Animal, Appointment, InventoryItem, Expense } from '../types';
+import { Animal, Appointment, Expense, InventoryItem, User } from '../types';
 
 export function useUsers() {
   const [users, setUsers] = useState<User[]>([]);
@@ -20,8 +20,9 @@ export function useUsers() {
       const data = await usersService.getAll();
       setUsers(data);
     } catch (err) {
-      console.error('Erro ao carregar usuários:', err);
-      setError(err instanceof Error ? err.message : 'Erro ao carregar usuários');
+      setError(
+        err instanceof Error ? err.message : 'Erro ao carregar usuários',
+      );
     } finally {
       setLoading(false);
     }
@@ -30,10 +31,9 @@ export function useUsers() {
   const createUser = async (user: Omit<User, 'id' | 'createdAt'>) => {
     try {
       const newUser = await usersService.create(user);
-      setUsers(prev => [newUser, ...prev]);
+      setUsers((prev) => [newUser, ...prev]);
       return newUser;
     } catch (err) {
-      console.error('Erro ao criar usuário:', err);
       setError(err instanceof Error ? err.message : 'Erro ao criar usuário');
       throw err;
     }
@@ -42,11 +42,14 @@ export function useUsers() {
   const updateUser = async (id: string, updates: Partial<User>) => {
     try {
       const updatedUser = await usersService.update(id, updates);
-      setUsers(prev => prev.map(user => user.id === id ? updatedUser : user));
+      setUsers((prev) =>
+        prev.map((user) => (user.id === id ? updatedUser : user)),
+      );
       return updatedUser;
     } catch (err) {
-      console.error('Erro ao atualizar usuário:', err);
-      setError(err instanceof Error ? err.message : 'Erro ao atualizar usuário');
+      setError(
+        err instanceof Error ? err.message : 'Erro ao atualizar usuário',
+      );
       throw err;
     }
   };
@@ -54,9 +57,8 @@ export function useUsers() {
   const deleteUser = async (id: string) => {
     try {
       await usersService.delete(id);
-      setUsers(prev => prev.filter(user => user.id !== id));
+      setUsers((prev) => prev.filter((user) => user.id !== id));
     } catch (err) {
-      console.error('Erro ao excluir usuário:', err);
       setError(err instanceof Error ? err.message : 'Erro ao excluir usuário');
       throw err;
     }
@@ -89,20 +91,20 @@ export function useAnimals() {
       const data = await animalsService.getAll();
       setAnimals(data);
     } catch (err) {
-      console.error('Erro ao carregar animais:', err);
       setError(err instanceof Error ? err.message : 'Erro ao carregar animais');
     } finally {
       setLoading(false);
     }
   };
 
-  const createAnimal = async (animal: Omit<Animal, 'id' | 'createdAt' | 'ownerId'>) => {
+  const createAnimal = async (
+    animal: Omit<Animal, 'id' | 'createdAt' | 'ownerId'>,
+  ) => {
     try {
       const newAnimal = await animalsService.create(animal);
-      setAnimals(prev => [newAnimal, ...prev]);
+      setAnimals((prev) => [newAnimal, ...prev]);
       return newAnimal;
     } catch (err) {
-      console.error('Erro ao criar animal:', err);
       setError(err instanceof Error ? err.message : 'Erro ao criar animal');
       throw err;
     }
@@ -111,10 +113,11 @@ export function useAnimals() {
   const updateAnimal = async (id: string, updates: Partial<Animal>) => {
     try {
       const updatedAnimal = await animalsService.update(id, updates);
-      setAnimals(prev => prev.map(animal => animal.id === id ? updatedAnimal : animal));
+      setAnimals((prev) =>
+        prev.map((animal) => (animal.id === id ? updatedAnimal : animal)),
+      );
       return updatedAnimal;
     } catch (err) {
-      console.error('Erro ao atualizar animal:', err);
       setError(err instanceof Error ? err.message : 'Erro ao atualizar animal');
       throw err;
     }
@@ -123,9 +126,8 @@ export function useAnimals() {
   const deleteAnimal = async (id: string) => {
     try {
       await animalsService.delete(id);
-      setAnimals(prev => prev.filter(animal => animal.id !== id));
+      setAnimals((prev) => prev.filter((animal) => animal.id !== id));
     } catch (err) {
-      console.error('Erro ao excluir animal:', err);
       setError(err instanceof Error ? err.message : 'Erro ao excluir animal');
       throw err;
     }
@@ -158,8 +160,9 @@ export function useAppointments() {
       const data = await appointmentsService.getAll();
       setAppointments(data);
     } catch (err) {
-      console.error('Erro ao carregar atendimentos:', err);
-      setError(err instanceof Error ? err.message : 'Erro ao carregar atendimentos');
+      setError(
+        err instanceof Error ? err.message : 'Erro ao carregar atendimentos',
+      );
     } finally {
       setLoading(false);
     }
@@ -168,23 +171,32 @@ export function useAppointments() {
   const createAppointment = async (appointment: Omit<Appointment, 'id'>) => {
     try {
       const newAppointment = await appointmentsService.create(appointment);
-      setAppointments(prev => [newAppointment, ...prev]);
+      setAppointments((prev) => [newAppointment, ...prev]);
       return newAppointment;
     } catch (err) {
-      console.error('Erro ao criar atendimento:', err);
-      setError(err instanceof Error ? err.message : 'Erro ao criar atendimento');
+      setError(
+        err instanceof Error ? err.message : 'Erro ao criar atendimento',
+      );
       throw err;
     }
   };
 
-  const updateAppointment = async (id: string, updates: Partial<Appointment>) => {
+  const updateAppointment = async (
+    id: string,
+    updates: Partial<Appointment>,
+  ) => {
     try {
       const updatedAppointment = await appointmentsService.update(id, updates);
-      setAppointments(prev => prev.map(appointment => appointment.id === id ? updatedAppointment : appointment));
+      setAppointments((prev) =>
+        prev.map((appointment) =>
+          appointment.id === id ? updatedAppointment : appointment,
+        ),
+      );
       return updatedAppointment;
     } catch (err) {
-      console.error('Erro ao atualizar atendimento:', err);
-      setError(err instanceof Error ? err.message : 'Erro ao atualizar atendimento');
+      setError(
+        err instanceof Error ? err.message : 'Erro ao atualizar atendimento',
+      );
       throw err;
     }
   };
@@ -192,10 +204,13 @@ export function useAppointments() {
   const deleteAppointment = async (id: string) => {
     try {
       await appointmentsService.delete(id);
-      setAppointments(prev => prev.filter(appointment => appointment.id !== id));
+      setAppointments((prev) =>
+        prev.filter((appointment) => appointment.id !== id),
+      );
     } catch (err) {
-      console.error('Erro ao excluir atendimento:', err);
-      setError(err instanceof Error ? err.message : 'Erro ao excluir atendimento');
+      setError(
+        err instanceof Error ? err.message : 'Erro ao excluir atendimento',
+      );
       throw err;
     }
   };
@@ -227,7 +242,6 @@ export function useInventory() {
       const data = await inventoryService.getAll();
       setItems(data);
     } catch (err) {
-      console.error('Erro ao carregar estoque:', err);
       setError(err instanceof Error ? err.message : 'Erro ao carregar estoque');
     } finally {
       setLoading(false);
@@ -237,10 +251,9 @@ export function useInventory() {
   const createItem = async (item: Omit<InventoryItem, 'id'>) => {
     try {
       const newItem = await inventoryService.create(item);
-      setItems(prev => [newItem, ...prev]);
+      setItems((prev) => [newItem, ...prev]);
       return newItem;
     } catch (err) {
-      console.error('Erro ao criar item:', err);
       setError(err instanceof Error ? err.message : 'Erro ao criar item');
       throw err;
     }
@@ -249,10 +262,11 @@ export function useInventory() {
   const updateItem = async (id: string, updates: Partial<InventoryItem>) => {
     try {
       const updatedItem = await inventoryService.update(id, updates);
-      setItems(prev => prev.map(item => item.id === id ? updatedItem : item));
+      setItems((prev) =>
+        prev.map((item) => (item.id === id ? updatedItem : item)),
+      );
       return updatedItem;
     } catch (err) {
-      console.error('Erro ao atualizar item:', err);
       setError(err instanceof Error ? err.message : 'Erro ao atualizar item');
       throw err;
     }
@@ -261,9 +275,8 @@ export function useInventory() {
   const deleteItem = async (id: string) => {
     try {
       await inventoryService.delete(id);
-      setItems(prev => prev.filter(item => item.id !== id));
+      setItems((prev) => prev.filter((item) => item.id !== id));
     } catch (err) {
-      console.error('Erro ao excluir item:', err);
       setError(err instanceof Error ? err.message : 'Erro ao excluir item');
       throw err;
     }
@@ -296,7 +309,6 @@ export function useExpenses() {
       const data = await expensesService.getAll();
       setExpenses(data);
     } catch (err) {
-      console.error('Erro ao carregar gastos:', err);
       setError(err instanceof Error ? err.message : 'Erro ao carregar gastos');
     } finally {
       setLoading(false);
@@ -306,10 +318,9 @@ export function useExpenses() {
   const createExpense = async (expense: Omit<Expense, 'id'>) => {
     try {
       const newExpense = await expensesService.create(expense);
-      setExpenses(prev => [newExpense, ...prev]);
+      setExpenses((prev) => [newExpense, ...prev]);
       return newExpense;
     } catch (err) {
-      console.error('Erro ao criar gasto:', err);
       setError(err instanceof Error ? err.message : 'Erro ao criar gasto');
       throw err;
     }
@@ -318,10 +329,11 @@ export function useExpenses() {
   const updateExpense = async (id: string, updates: Partial<Expense>) => {
     try {
       const updatedExpense = await expensesService.update(id, updates);
-      setExpenses(prev => prev.map(expense => expense.id === id ? updatedExpense : expense));
+      setExpenses((prev) =>
+        prev.map((expense) => (expense.id === id ? updatedExpense : expense)),
+      );
       return updatedExpense;
     } catch (err) {
-      console.error('Erro ao atualizar gasto:', err);
       setError(err instanceof Error ? err.message : 'Erro ao atualizar gasto');
       throw err;
     }
@@ -330,9 +342,8 @@ export function useExpenses() {
   const deleteExpense = async (id: string) => {
     try {
       await expensesService.delete(id);
-      setExpenses(prev => prev.filter(expense => expense.id !== id));
+      setExpenses((prev) => prev.filter((expense) => expense.id !== id));
     } catch (err) {
-      console.error('Erro ao excluir gasto:', err);
       setError(err instanceof Error ? err.message : 'Erro ao excluir gasto');
       throw err;
     }

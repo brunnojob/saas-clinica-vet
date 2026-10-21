@@ -1,36 +1,61 @@
-import React, { useEffect } from 'react';
-import { useAuth } from './hooks/useAuth';
+import React, { lazy, Suspense } from 'react';
 import { LoginForm } from './components/Auth/LoginForm';
 import { Layout } from './components/Layout/Layout';
-import { Dashboard } from './pages/Dashboard';
-import { Animals } from './pages/Animals';
-import { Appointments } from './pages/Appointments';
-import { Inventory } from './pages/Inventory';
-import { Expenses } from './pages/Expenses';
-import { Reports } from './pages/Reports';
-import { Users } from './pages/Users';
-import { Settings } from './pages/Settings';
-import { checkConnection } from './lib/supabase';
+import { useAuth } from './hooks/useAuth';
+import { isSupabaseConfigured } from './lib/supabase';
+
+const Dashboard = lazy(() =>
+  import('./pages/Dashboard').then((module) => ({ default: module.Dashboard })),
+);
+
+const Animals = lazy(() =>
+  import('./pages/Animals').then((module) => ({ default: module.Animals })),
+);
+
+const Appointments = lazy(() =>
+  import('./pages/Appointments').then((module) => ({
+    default: module.Appointments,
+  })),
+);
+
+const Inventory = lazy(() =>
+  import('./pages/Inventory').then((module) => ({ default: module.Inventory })),
+);
+
+const Expenses = lazy(() =>
+  import('./pages/Expenses').then((module) => ({ default: module.Expenses })),
+);
+
+const Reports = lazy(() =>
+  import('./pages/Reports').then((module) => ({ default: module.Reports })),
+);
+
+const Users = lazy(() =>
+  import('./pages/Users').then((module) => ({ default: module.Users })),
+);
+
+const Settings = lazy(() =>
+  import('./pages/Settings').then((module) => ({ default: module.Settings })),
+);
 
 function App() {
   const { user, isLoading, login, logout, isAuthenticated } = useAuth();
   const [currentPage, setCurrentPage] = React.useState('dashboard');
 
-  useEffect(() => {
-    // Verificar conexão com Supabase ao carregar
-    const initializeApp = async () => {
-      try {
-        console.log('🚀 Inicializando aplicação...');
-        await checkConnection();
-      } catch (error) {
-        console.error('❌ Erro ao inicializar aplicação:', error);
-      }
-    };
+  if (!isSupabaseConfigured) {
+    return (
+      <main className="min-h-screen bg-gray-50 flex items-center justify-center p-6">
+        <div className="max-w-md bg-white border rounded-xl p-6">
+          <h1 className="text-xl font-semibold">Configuração necessária</h1>
+          <p className="mt-3 text-gray-600">
+            Configure as variáveis do Supabase conforme o README e reinicie a
+            aplicação.
+          </p>
+        </div>
+      </main>
+    );
+  }
 
-    initializeApp();
-  }, []);
-
-  // Mostrar loading apenas durante a verificação inicial de autenticação
   if (isLoading) {
     return (
       <div className="min-h-screen bg-gray-50 flex items-center justify-center">
@@ -42,7 +67,6 @@ function App() {
     );
   }
 
-  // Se não está autenticado, mostrar tela de login
   if (!isAuthenticated) {
     return <LoginForm onLogin={login} isLoading={false} />;
   }
@@ -62,7 +86,11 @@ function App() {
       case 'reports':
         return <Reports />;
       case 'users':
-        return <Users />;
+        return user?.role === 'admin' ? (
+          <Users />
+        ) : (
+          <Dashboard onPageChange={setCurrentPage} />
+        );
       case 'settings':
         return <Settings />;
       default:
@@ -78,7 +106,15 @@ function App() {
         currentPage={currentPage}
         onPageChange={setCurrentPage}
       >
-        {renderPage()}
+        <Suspense
+          fallback={
+            <p role="status" className="p-6 text-gray-600">
+              Carregando...
+            </p>
+          }
+        >
+          {renderPage()}
+        </Suspense>
       </Layout>
     </div>
   );

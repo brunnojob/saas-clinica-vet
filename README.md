@@ -1,35 +1,46 @@
-# Brunno Silveira - Sistema de Gestão Veterinária
+# Clínica veterinária
 
-Sistema SaaS completo para gestão de clínicas veterinárias, desenvolvido com React, TailwindCSS e Supabase.
+Projeto da faculdade desenvolvido durante o curso de Análise e Desenvolvimento de Sistemas. A proposta era criar um sistema de gestão veterinária para uma atividade acadêmica com estudantes de veterinária.
+
+O projeto foi feito para estudo e apresentação. Não é um sistema validado para uso em uma clínica.
 
 ## Funcionalidades
 
-- **Cadastro de Pacientes**: Registro completo de animais e responsáveis
-- **Atendimentos**: Consultas, vacinas, cirurgias e exames
-- **Controle de Estoque**: Medicamentos, vacinas e materiais
-- **Gestão Financeira**: Controle de gastos por atendimento
-- **Relatórios**: Análises e estatísticas da clínica
-- **Usuários**: Gerenciamento de veterinários, auxiliares e admins
+- Cadastro de animais e responsáveis.
+- Registro de atendimentos.
+- Controle de estoque.
+- Registro de gastos.
+- Cadastro de perfis da equipe.
+
+Os relatórios usam dados fictícios. A exportação de relatórios e as configurações de notificações, segurança e backup são demonstrações sem implementação.
 
 ## Tecnologias
 
-### Frontend
+React, TypeScript, Vite, Tailwind CSS, Recharts e Supabase.
 
-- React 18
-- TypeScript
-- TailwindCSS
-- Lucide React (ícones)
-- Recharts (gráficos)
-- Vite
+## Executar
 
-### Backend
+Requisitos: Node.js 22 e npm.
 
-- Supabase (PostgreSQL)
-- Row Level Security (RLS)
-- Real-time subscriptions
-- Authentication
+```sh
+npm ci
+cp .env.example .env.local
+npm run dev
+```
 
-## Desnvolvidor por Brunno Silveira
+Preencha `.env.local` com a URL e a chave pública do seu projeto Supabase. Configure o banco e as contas conforme [Configuração](docs/configuracao.md). Nunca use uma chave `service_role` no frontend.
 
-- https://www.linkedin.com/in/brunnojob/
-- https://github.com/brunnojob
+```sh
+npm run lint
+npm run typecheck
+npm test
+npm run build
+```
+
+## Autor
+
+Brunno Silveira — [brunnodev.store](https://brunnodev.store).
+
+## Licença
+
+[MIT](LICENSE).

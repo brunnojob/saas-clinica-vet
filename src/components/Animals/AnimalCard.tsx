@@ -1,5 +1,4 @@
-import React from 'react';
-import { Heart, Phone, Calendar, Edit, Trash2 } from 'lucide-react';
+import { Calendar, Edit, Phone, Trash2 } from 'lucide-react';
 import { Animal } from '../../types';
 
 interface AnimalCardProps {
@@ -21,11 +20,15 @@ export function AnimalCard({ animal, onEdit, onDelete }: AnimalCardProps) {
             {getSpeciesIcon(animal.species)}
           </div>
           <div className="ml-4">
-            <h3 className="text-lg font-semibold text-gray-900">{animal.name}</h3>
-            <p className="text-sm text-gray-500">{animal.breed} • {animal.species}</p>
+            <h3 className="text-lg font-semibold text-gray-900">
+              {animal.name}
+            </h3>
+            <p className="text-sm text-gray-500">
+              {animal.species} • {animal.species}
+            </p>
           </div>
         </div>
-        
+
         <div className="flex space-x-2 opacity-0 group-hover:opacity-100 transition-opacity">
           <button
             onClick={() => onEdit(animal)}
@@ -47,25 +50,27 @@ export function AnimalCard({ animal, onEdit, onDelete }: AnimalCardProps) {
           <span className="text-gray-600">Idade:</span>
           <span className="font-medium">{animal.age} anos</span>
         </div>
-        
+
         <div className="flex items-center justify-between text-sm">
           <span className="text-gray-600">Peso:</span>
           <span className="font-medium">{animal.weight} kg</span>
         </div>
-        
+
         <div className="flex items-center justify-between text-sm">
           <span className="text-gray-600">Cor:</span>
           <span className="font-medium">{animal.color}</span>
         </div>
-        
+
         <div className="pt-3 border-t border-gray-100">
-          <p className="text-sm font-medium text-gray-900 mb-2">Tutor: {animal.owner.name}</p>
+          <p className="text-sm font-medium text-gray-900 mb-2">
+            Tutor: {animal.owner.name}
+          </p>
           <div className="flex items-center text-sm text-gray-600">
             <Phone className="w-4 h-4 mr-2" />
             {animal.owner.phone}
           </div>
         </div>
-        
+
         <div className="flex items-center text-xs text-gray-500 pt-2">
           <Calendar className="w-3 h-3 mr-1" />
           Cadastrado em {animal.createdAt.toLocaleDateString('pt-BR')}

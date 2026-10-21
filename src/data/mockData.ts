@@ -1,4 +1,13 @@
-import { User, Animal, Owner, MedicalRecord, Appointment, InventoryItem, InventoryTransaction, Expense } from '../types';
+import {
+  Animal,
+  Appointment,
+  Expense,
+  InventoryItem,
+  InventoryTransaction,
+  MedicalRecord,
+  Owner,
+  User,
+} from '../types';
 
 export const mockUsers: User[] = [
   {
@@ -138,7 +147,7 @@ export const mockAppointments: Appointment[] = [
     medications: ['Vermífugo'],
     nextAppointment: new Date('2024-04-20'),
     veterinarianId: '1',
-    cost: 120.00,
+    cost: 120.0,
   },
   {
     id: '2',
@@ -151,7 +160,7 @@ export const mockAppointments: Appointment[] = [
     medications: ['Vacina V8'],
     nextAppointment: new Date('2024-03-05'),
     veterinarianId: '2',
-    cost: 80.00,
+    cost: 80.0,
   },
 ];
 
@@ -165,7 +174,7 @@ export const mockInventoryItems: InventoryItem[] = [
     minQuantity: 10,
     unit: 'dose',
     expirationDate: new Date('2024-12-31'),
-    cost: 45.00,
+    cost: 45.0,
     supplier: 'Laboratório VetMed',
     location: 'Geladeira A - Prateleira 2',
   },
@@ -178,7 +187,7 @@ export const mockInventoryItems: InventoryItem[] = [
     minQuantity: 5,
     unit: 'frasco',
     expirationDate: new Date('2025-06-30'),
-    cost: 28.50,
+    cost: 28.5,
     supplier: 'FarmaPet',
     location: 'Armário B - Gaveta 1',
   },
@@ -225,7 +234,7 @@ export const mockExpenses: Expense[] = [
     id: '1',
     appointmentId: '1',
     description: 'Vermífugo administrado',
-    amount: 25.00,
+    amount: 25.0,
     date: new Date('2024-01-20'),
     category: 'medication',
   },
@@ -233,7 +242,7 @@ export const mockExpenses: Expense[] = [
     id: '2',
     appointmentId: '2',
     description: 'Vacina V8',
-    amount: 45.00,
+    amount: 45.0,
     date: new Date('2024-02-05'),
     category: 'medication',
   },

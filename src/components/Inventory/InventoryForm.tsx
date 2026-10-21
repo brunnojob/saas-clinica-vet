@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
 import { X } from 'lucide-react';
+import React, { useState } from 'react';
 import { InventoryItem } from '../../types';
 
 interface InventoryFormProps {
@@ -10,15 +10,23 @@ interface InventoryFormProps {
   type: 'add' | 'in' | 'out';
 }
 
-export function InventoryForm({ item, onSubmit, onCancel, isOpen, type }: InventoryFormProps) {
+export function InventoryForm({
+  item,
+  onSubmit,
+  onCancel,
+  isOpen,
+  type,
+}: InventoryFormProps) {
   const [formData, setFormData] = useState({
     name: item?.name || '',
     type: item?.type || 'medication',
     category: item?.category || '',
-    quantity: type === 'add' ? (item?.quantity || 0) : 0,
+    quantity: type === 'add' ? item?.quantity || 0 : 0,
     minQuantity: item?.minQuantity || 0,
     unit: item?.unit || 'unidade',
-    expirationDate: item?.expirationDate ? item.expirationDate.toISOString().split('T')[0] : '',
+    expirationDate: item?.expirationDate
+      ? item.expirationDate.toISOString().split('T')[0]
+      : '',
     cost: item?.cost || 0,
     supplier: item?.supplier || '',
     location: item?.location || '',
@@ -30,7 +38,7 @@ export function InventoryForm({ item, onSubmit, onCancel, isOpen, type }: Invent
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    
+
     const itemData: Partial<InventoryItem> = {
       name: formData.name,
       type: formData.type as InventoryItem['type'],
@@ -38,21 +46,27 @@ export function InventoryForm({ item, onSubmit, onCancel, isOpen, type }: Invent
       quantity: formData.quantity,
       minQuantity: formData.minQuantity,
       unit: formData.unit,
-      expirationDate: formData.expirationDate ? new Date(formData.expirationDate) : undefined,
+      expirationDate: formData.expirationDate
+        ? new Date(formData.expirationDate)
+        : undefined,
       cost: formData.cost,
       supplier: formData.supplier,
       location: formData.location,
     };
-    
+
     onSubmit(itemData);
   };
 
   const getTitle = () => {
     switch (type) {
-      case 'add': return item ? 'Editar Item' : 'Novo Item';
-      case 'in': return 'Entrada de Estoque';
-      case 'out': return 'Saída de Estoque';
-      default: return 'Item';
+      case 'add':
+        return item ? 'Editar Item' : 'Novo Item';
+      case 'in':
+        return 'Entrada de Estoque';
+      case 'out':
+        return 'Saída de Estoque';
+      default:
+        return 'Item';
     }
   };
 
@@ -60,9 +74,7 @@ export function InventoryForm({ item, onSubmit, onCancel, isOpen, type }: Invent
     <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50">
       <div className="bg-white rounded-xl max-w-2xl w-full max-h-[90vh] overflow-y-auto">
         <div className="flex items-center justify-between p-6 border-b border-gray-200">
-          <h2 className="text-xl font-semibold text-gray-900">
-            {getTitle()}
-          </h2>
+          <h2 className="text-xl font-semibold text-gray-900">{getTitle()}</h2>
           <button
             onClick={onCancel}
             className="p-2 hover:bg-gray-100 rounded-lg transition-colors"
@@ -82,7 +94,9 @@ export function InventoryForm({ item, onSubmit, onCancel, isOpen, type }: Invent
                   <input
                     type="text"
                     value={formData.name}
-                    onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                    onChange={(e) =>
+                      setFormData({ ...formData, name: e.target.value })
+                    }
                     className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
                     required
                   />
@@ -94,7 +108,12 @@ export function InventoryForm({ item, onSubmit, onCancel, isOpen, type }: Invent
                   </label>
                   <select
                     value={formData.type}
-                    onChange={(e) => setFormData({ ...formData, type: e.target.value })}
+                    onChange={(e) =>
+                      setFormData({
+                        ...formData,
+                        type: e.target.value as InventoryItem['type'],
+                      })
+                    }
                     className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
                     required
                   >
@@ -112,7 +131,9 @@ export function InventoryForm({ item, onSubmit, onCancel, isOpen, type }: Invent
                   <input
                     type="text"
                     value={formData.category}
-                    onChange={(e) => setFormData({ ...formData, category: e.target.value })}
+                    onChange={(e) =>
+                      setFormData({ ...formData, category: e.target.value })
+                    }
                     className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
                   />
                 </div>
@@ -124,7 +145,9 @@ export function InventoryForm({ item, onSubmit, onCancel, isOpen, type }: Invent
                   <input
                     type="text"
                     value={formData.unit}
-                    onChange={(e) => setFormData({ ...formData, unit: e.target.value })}
+                    onChange={(e) =>
+                      setFormData({ ...formData, unit: e.target.value })
+                    }
                     className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
                     placeholder="ex: unidade, ml, kg"
                   />
@@ -138,7 +161,12 @@ export function InventoryForm({ item, onSubmit, onCancel, isOpen, type }: Invent
                     type="number"
                     min="0"
                     value={formData.quantity}
-                    onChange={(e) => setFormData({ ...formData, quantity: parseInt(e.target.value) || 0 })}
+                    onChange={(e) =>
+                      setFormData({
+                        ...formData,
+                        quantity: parseInt(e.target.value) || 0,
+                      })
+                    }
                     className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
                   />
                 </div>
@@ -151,7 +179,12 @@ export function InventoryForm({ item, onSubmit, onCancel, isOpen, type }: Invent
                     type="number"
                     min="0"
                     value={formData.minQuantity}
-                    onChange={(e) => setFormData({ ...formData, minQuantity: parseInt(e.target.value) || 0 })}
+                    onChange={(e) =>
+                      setFormData({
+                        ...formData,
+                        minQuantity: parseInt(e.target.value) || 0,
+                      })
+                    }
                     className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
                   />
                 </div>
@@ -163,7 +196,12 @@ export function InventoryForm({ item, onSubmit, onCancel, isOpen, type }: Invent
                   <input
                     type="date"
                     value={formData.expirationDate}
-                    onChange={(e) => setFormData({ ...formData, expirationDate: e.target.value })}
+                    onChange={(e) =>
+                      setFormData({
+                        ...formData,
+                        expirationDate: e.target.value,
+                      })
+                    }
                     className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
                   />
                 </div>
@@ -177,7 +215,12 @@ export function InventoryForm({ item, onSubmit, onCancel, isOpen, type }: Invent
                     min="0"
                     step="0.01"
                     value={formData.cost}
-                    onChange={(e) => setFormData({ ...formData, cost: parseFloat(e.target.value) || 0 })}
+                    onChange={(e) =>
+                      setFormData({
+                        ...formData,
+                        cost: parseFloat(e.target.value) || 0,
+                      })
+                    }
                     className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
                   />
                 </div>
@@ -189,7 +232,9 @@ export function InventoryForm({ item, onSubmit, onCancel, isOpen, type }: Invent
                   <input
                     type="text"
                     value={formData.supplier}
-                    onChange={(e) => setFormData({ ...formData, supplier: e.target.value })}
+                    onChange={(e) =>
+                      setFormData({ ...formData, supplier: e.target.value })
+                    }
                     className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
                   />
                 </div>
@@ -201,7 +246,9 @@ export function InventoryForm({ item, onSubmit, onCancel, isOpen, type }: Invent
                   <input
                     type="text"
                     value={formData.location}
-                    onChange={(e) => setFormData({ ...formData, location: e.target.value })}
+                    onChange={(e) =>
+                      setFormData({ ...formData, location: e.target.value })
+                    }
                     className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
                     placeholder="ex: Armário A - Prateleira 1"
                   />
@@ -214,7 +261,9 @@ export function InventoryForm({ item, onSubmit, onCancel, isOpen, type }: Invent
             <>
               <div className="bg-gray-50 rounded-lg p-4">
                 <h3 className="font-medium text-gray-900 mb-2">{item?.name}</h3>
-                <p className="text-sm text-gray-600">Estoque atual: {item?.quantity} {item?.unit}</p>
+                <p className="text-sm text-gray-600">
+                  Estoque atual: {item?.quantity} {item?.unit}
+                </p>
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -226,7 +275,12 @@ export function InventoryForm({ item, onSubmit, onCancel, isOpen, type }: Invent
                     type="number"
                     min="1"
                     value={formData.quantity}
-                    onChange={(e) => setFormData({ ...formData, quantity: parseInt(e.target.value) || 0 })}
+                    onChange={(e) =>
+                      setFormData({
+                        ...formData,
+                        quantity: parseInt(e.target.value) || 0,
+                      })
+                    }
                     className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
                     required
                   />
@@ -239,9 +293,15 @@ export function InventoryForm({ item, onSubmit, onCancel, isOpen, type }: Invent
                   <input
                     type="text"
                     value={formData.reason}
-                    onChange={(e) => setFormData({ ...formData, reason: e.target.value })}
+                    onChange={(e) =>
+                      setFormData({ ...formData, reason: e.target.value })
+                    }
                     className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
-                    placeholder={type === 'in' ? 'ex: Compra, Doação' : 'ex: Uso em consulta, Vencimento'}
+                    placeholder={
+                      type === 'in'
+                        ? 'ex: Compra, Doação'
+                        : 'ex: Uso em consulta, Vencimento'
+                    }
                     required
                   />
                 </div>
@@ -252,7 +312,9 @@ export function InventoryForm({ item, onSubmit, onCancel, isOpen, type }: Invent
                   </label>
                   <textarea
                     value={formData.notes}
-                    onChange={(e) => setFormData({ ...formData, notes: e.target.value })}
+                    onChange={(e) =>
+                      setFormData({ ...formData, notes: e.target.value })
+                    }
                     rows={3}
                     className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
                     placeholder="Observações adicionais..."
@@ -274,8 +336,13 @@ export function InventoryForm({ item, onSubmit, onCancel, isOpen, type }: Invent
               type="submit"
               className="px-4 py-2 bg-primary-500 text-white rounded-lg hover:bg-primary-600 transition-colors"
             >
-              {type === 'add' ? (item ? 'Atualizar' : 'Cadastrar') : 
-               type === 'in' ? 'Registrar Entrada' : 'Registrar Saída'}
+              {type === 'add'
+                ? item
+                  ? 'Atualizar'
+                  : 'Cadastrar'
+                : type === 'in'
+                  ? 'Registrar Entrada'
+                  : 'Registrar Saída'}
             </button>
           </div>
         </form>
