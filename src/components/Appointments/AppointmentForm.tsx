@@ -1,7 +1,7 @@
+import { X } from 'lucide-react';
 import React, { useState } from 'react';
-import { X, Calendar, Clock, User, FileText } from 'lucide-react';
-import { Appointment } from '../../types';
 import { useAnimals, useUsers } from '../../hooks/useDatabase';
+import { Appointment } from '../../types';
 
 interface AppointmentFormProps {
   appointment?: Appointment;
@@ -10,10 +10,15 @@ interface AppointmentFormProps {
   isOpen: boolean;
 }
 
-export function AppointmentForm({ appointment, onSubmit, onCancel, isOpen }: AppointmentFormProps) {
+export function AppointmentForm({
+  appointment,
+  onSubmit,
+  onCancel,
+  isOpen,
+}: AppointmentFormProps) {
   const { animals } = useAnimals();
   const { users } = useUsers();
-  
+
   const [formData, setFormData] = useState({
     medicalRecordId: appointment?.medicalRecordId || '',
     date: appointment?.date ? appointment.date.toISOString().slice(0, 16) : '',
@@ -30,7 +35,7 @@ export function AppointmentForm({ appointment, onSubmit, onCancel, isOpen }: App
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    
+
     const appointmentData: Partial<Appointment> = {
       medicalRecordId: formData.medicalRecordId,
       date: new Date(formData.date),
@@ -38,15 +43,18 @@ export function AppointmentForm({ appointment, onSubmit, onCancel, isOpen }: App
       description: formData.description,
       diagnosis: formData.diagnosis,
       treatment: formData.treatment,
-      medications: formData.medications.split(',').map(m => m.trim()).filter(m => m),
+      medications: formData.medications
+        .split(',')
+        .map((m) => m.trim())
+        .filter((m) => m),
       veterinarianId: formData.veterinarianId,
       cost: formData.cost,
     };
-    
+
     onSubmit(appointmentData);
   };
 
-  const veterinarians = users.filter(user => user.role === 'veterinarian');
+  const veterinarians = users.filter((user) => user.role === 'veterinarian');
 
   return (
     <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50">
@@ -71,12 +79,14 @@ export function AppointmentForm({ appointment, onSubmit, onCancel, isOpen }: App
               </label>
               <select
                 value={formData.medicalRecordId}
-                onChange={(e) => setFormData({ ...formData, medicalRecordId: e.target.value })}
+                onChange={(e) =>
+                  setFormData({ ...formData, medicalRecordId: e.target.value })
+                }
                 className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
                 required
               >
                 <option value="">Selecione um paciente</option>
-                {animals.map(animal => (
+                {animals.map((animal) => (
                   <option key={animal.id} value={animal.id}>
                     {animal.name} - {animal.owner.name}
                   </option>
@@ -90,12 +100,14 @@ export function AppointmentForm({ appointment, onSubmit, onCancel, isOpen }: App
               </label>
               <select
                 value={formData.veterinarianId}
-                onChange={(e) => setFormData({ ...formData, veterinarianId: e.target.value })}
+                onChange={(e) =>
+                  setFormData({ ...formData, veterinarianId: e.target.value })
+                }
                 className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
                 required
               >
                 <option value="">Selecione um veterinário</option>
-                {veterinarians.map(vet => (
+                {veterinarians.map((vet) => (
                   <option key={vet.id} value={vet.id}>
                     {vet.name}
                   </option>
@@ -110,7 +122,9 @@ export function AppointmentForm({ appointment, onSubmit, onCancel, isOpen }: App
               <input
                 type="datetime-local"
                 value={formData.date}
-                onChange={(e) => setFormData({ ...formData, date: e.target.value })}
+                onChange={(e) =>
+                  setFormData({ ...formData, date: e.target.value })
+                }
                 className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
                 required
               />
@@ -122,7 +136,12 @@ export function AppointmentForm({ appointment, onSubmit, onCancel, isOpen }: App
               </label>
               <select
                 value={formData.type}
-                onChange={(e) => setFormData({ ...formData, type: e.target.value })}
+                onChange={(e) =>
+                  setFormData({
+                    ...formData,
+                    type: e.target.value as Appointment['type'],
+                  })
+                }
                 className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
                 required
               >
@@ -140,7 +159,9 @@ export function AppointmentForm({ appointment, onSubmit, onCancel, isOpen }: App
               </label>
               <textarea
                 value={formData.description}
-                onChange={(e) => setFormData({ ...formData, description: e.target.value })}
+                onChange={(e) =>
+                  setFormData({ ...formData, description: e.target.value })
+                }
                 rows={3}
                 className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
                 placeholder="Descreva o motivo do atendimento..."
@@ -154,7 +175,9 @@ export function AppointmentForm({ appointment, onSubmit, onCancel, isOpen }: App
               </label>
               <textarea
                 value={formData.diagnosis}
-                onChange={(e) => setFormData({ ...formData, diagnosis: e.target.value })}
+                onChange={(e) =>
+                  setFormData({ ...formData, diagnosis: e.target.value })
+                }
                 rows={3}
                 className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
                 placeholder="Diagnóstico do veterinário..."
@@ -167,7 +190,9 @@ export function AppointmentForm({ appointment, onSubmit, onCancel, isOpen }: App
               </label>
               <textarea
                 value={formData.treatment}
-                onChange={(e) => setFormData({ ...formData, treatment: e.target.value })}
+                onChange={(e) =>
+                  setFormData({ ...formData, treatment: e.target.value })
+                }
                 rows={3}
                 className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
                 placeholder="Tratamento prescrito..."
@@ -181,7 +206,9 @@ export function AppointmentForm({ appointment, onSubmit, onCancel, isOpen }: App
               <input
                 type="text"
                 value={formData.medications}
-                onChange={(e) => setFormData({ ...formData, medications: e.target.value })}
+                onChange={(e) =>
+                  setFormData({ ...formData, medications: e.target.value })
+                }
                 className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
                 placeholder="Medicamentos utilizados (separados por vírgula)"
               />
@@ -196,7 +223,12 @@ export function AppointmentForm({ appointment, onSubmit, onCancel, isOpen }: App
                 min="0"
                 step="0.01"
                 value={formData.cost}
-                onChange={(e) => setFormData({ ...formData, cost: parseFloat(e.target.value) || 0 })}
+                onChange={(e) =>
+                  setFormData({
+                    ...formData,
+                    cost: parseFloat(e.target.value) || 0,
+                  })
+                }
                 className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
               />
             </div>

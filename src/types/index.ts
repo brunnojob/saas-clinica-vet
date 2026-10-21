@@ -4,7 +4,7 @@ export interface User {
   email: string;
   role: 'veterinarian' | 'assistant' | 'admin';
   avatar?: string;
-  password?: string; // Adicionado para senhas personalizadas
+  authUserId?: string;
   createdAt: Date;
 }
 
@@ -101,7 +101,7 @@ export interface Report {
     start: Date;
     end: Date;
   };
-  filters: Record<string, any>;
+  filters: Record<string, unknown>;
   generatedAt: Date;
   generatedBy: string;
 }

@@ -1,16 +1,3 @@
-/*
-  # Fix RLS policies for public access
-
-  1. Changes
-    - Update all RLS policies from 'authenticated' to 'public' to allow anonymous access
-    - This resolves the "new row violates row-level security policy" errors
-
-  2. Security Note
-    - This change broadens access to allow anonymous users
-    - For production, consider implementing proper Supabase Auth integration
-*/
-
--- Drop existing policies
 DROP POLICY IF EXISTS "Usuários autenticados podem ver todos os usuários" ON users;
 DROP POLICY IF EXISTS "Usuários autenticados podem inserir usuários" ON users;
 DROP POLICY IF EXISTS "Usuários autenticados podem atualizar usuários" ON users;
@@ -36,7 +23,6 @@ DROP POLICY IF EXISTS "Usuários autenticados podem inserir gastos" ON expenses;
 DROP POLICY IF EXISTS "Usuários autenticados podem atualizar gastos" ON expenses;
 DROP POLICY IF EXISTS "Usuários autenticados podem deletar gastos" ON expenses;
 
--- Create new policies with public access
 CREATE POLICY "Usuários públicos podem ver todos os usuários"
   ON users FOR SELECT
   TO public
@@ -57,7 +43,6 @@ CREATE POLICY "Usuários públicos podem deletar usuários"
   TO public
   USING (true);
 
--- Políticas para animais
 CREATE POLICY "Usuários públicos podem ver todos os animais"
   ON animals FOR SELECT
   TO public
@@ -78,7 +63,6 @@ CREATE POLICY "Usuários públicos podem deletar animais"
   TO public
   USING (true);
 
--- Políticas para atendimentos
 CREATE POLICY "Usuários públicos podem ver todos os atendimentos"
   ON appointments FOR SELECT
   TO public
@@ -99,7 +83,6 @@ CREATE POLICY "Usuários públicos podem deletar atendimentos"
   TO public
   USING (true);
 
--- Políticas para estoque
 CREATE POLICY "Usuários públicos podem ver todos os itens do estoque"
   ON inventory_items FOR SELECT
   TO public
@@ -120,7 +103,6 @@ CREATE POLICY "Usuários públicos podem deletar itens do estoque"
   TO public
   USING (true);
 
--- Políticas para gastos
 CREATE POLICY "Usuários públicos podem ver todos os gastos"
   ON expenses FOR SELECT
   TO public

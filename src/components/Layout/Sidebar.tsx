@@ -1,14 +1,13 @@
-import React from 'react';
 import {
-  Home,
-  Users,
-  FileText,
-  Package,
-  Calculator,
   BarChart3,
-  Settings,
-  LogOut,
+  Calculator,
+  FileText,
   Heart,
+  Home,
+  LogOut,
+  Package,
+  Settings,
+  Users,
 } from 'lucide-react';
 import { User } from '../../types';
 
@@ -31,17 +30,24 @@ const menuItems = [
   { id: 'settings', label: 'Configurações', icon: Settings },
 ];
 
-export function Sidebar({ currentPage, onPageChange, user, onLogout, isCollapsed }: SidebarProps) {
-  const filteredMenuItems = menuItems.filter(item => {
+export function Sidebar({
+  currentPage,
+  onPageChange,
+  user,
+  onLogout,
+  isCollapsed,
+}: SidebarProps) {
+  const filteredMenuItems = menuItems.filter((item) => {
     if (item.id === 'users' && user.role !== 'admin') return false;
     return true;
   });
 
   return (
-    <div className={`bg-white border-r border-gray-200 transition-all duration-300 ${
-      isCollapsed ? 'w-16' : 'w-64'
-    } flex flex-col h-full`}>
-      {/* Logo */}
+    <div
+      className={`bg-white border-r border-gray-200 transition-all duration-300 ${
+        isCollapsed ? 'w-16' : 'w-64'
+      } flex flex-col h-full`}
+    >
       <div className="p-6 border-b border-gray-200">
         <div className="flex items-center">
           <div className="w-8 h-8 bg-primary-500 rounded-lg flex items-center justify-center">
@@ -49,14 +55,15 @@ export function Sidebar({ currentPage, onPageChange, user, onLogout, isCollapsed
           </div>
           {!isCollapsed && (
             <div className="ml-3">
-              <h1 className="text-lg font-bold text-gray-900">Brunno Silveira</h1>
+              <h1 className="text-lg font-bold text-gray-900">
+                Brunno Silveira
+              </h1>
               <p className="text-xs text-gray-500">Gestão Veterinária</p>
             </div>
           )}
         </div>
       </div>
 
-      {/* Navigation */}
       <nav className="flex-1 p-4">
         <ul className="space-y-2">
           {filteredMenuItems.map((item) => {
@@ -74,7 +81,9 @@ export function Sidebar({ currentPage, onPageChange, user, onLogout, isCollapsed
                   }`}
                   title={isCollapsed ? item.label : undefined}
                 >
-                  <Icon className={`w-5 h-5 ${isCollapsed ? 'mx-auto' : 'mr-3'}`} />
+                  <Icon
+                    className={`w-5 h-5 ${isCollapsed ? 'mx-auto' : 'mr-3'}`}
+                  />
                   {!isCollapsed && <span>{item.label}</span>}
                 </button>
               </li>
@@ -83,7 +92,6 @@ export function Sidebar({ currentPage, onPageChange, user, onLogout, isCollapsed
         </ul>
       </nav>
 
-      {/* User Info */}
       <div className="p-4 border-t border-gray-200">
         {!isCollapsed && (
           <div className="mb-4">

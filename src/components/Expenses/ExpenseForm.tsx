@@ -1,7 +1,7 @@
+import { X } from 'lucide-react';
 import React, { useState } from 'react';
-import { X, DollarSign, Calendar, FileText } from 'lucide-react';
+import { useAnimals, useAppointments } from '../../hooks/useDatabase';
 import { Expense } from '../../types';
-import { useAppointments, useAnimals } from '../../hooks/useDatabase';
 
 interface ExpenseFormProps {
   expense?: Expense;
@@ -10,15 +10,22 @@ interface ExpenseFormProps {
   isOpen: boolean;
 }
 
-export function ExpenseForm({ expense, onSubmit, onCancel, isOpen }: ExpenseFormProps) {
+export function ExpenseForm({
+  expense,
+  onSubmit,
+  onCancel,
+  isOpen,
+}: ExpenseFormProps) {
   const { appointments } = useAppointments();
   const { animals } = useAnimals();
-  
+
   const [formData, setFormData] = useState({
     appointmentId: expense?.appointmentId || '',
     description: expense?.description || '',
     amount: expense?.amount || 0,
-    date: expense?.date ? expense.date.toISOString().slice(0, 16) : new Date().toISOString().slice(0, 16),
+    date: expense?.date
+      ? expense.date.toISOString().slice(0, 16)
+      : new Date().toISOString().slice(0, 16),
     category: expense?.category || 'medication',
   });
 
@@ -26,7 +33,7 @@ export function ExpenseForm({ expense, onSubmit, onCancel, isOpen }: ExpenseForm
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    
+
     const expenseData: Partial<Expense> = {
       appointmentId: formData.appointmentId,
       description: formData.description,
@@ -34,7 +41,7 @@ export function ExpenseForm({ expense, onSubmit, onCancel, isOpen }: ExpenseForm
       date: new Date(formData.date),
       category: formData.category as Expense['category'],
     };
-    
+
     onSubmit(expenseData);
   };
 
@@ -61,15 +68,20 @@ export function ExpenseForm({ expense, onSubmit, onCancel, isOpen }: ExpenseForm
               </label>
               <select
                 value={formData.appointmentId}
-                onChange={(e) => setFormData({ ...formData, appointmentId: e.target.value })}
+                onChange={(e) =>
+                  setFormData({ ...formData, appointmentId: e.target.value })
+                }
                 className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
               >
                 <option value="">Selecione um atendimento</option>
-                {appointments.map(appointment => {
-                  const animal = animals.find(a => a.id === appointment.medicalRecordId);
+                {appointments.map((appointment) => {
+                  const animal = animals.find(
+                    (a) => a.id === appointment.medicalRecordId,
+                  );
                   return (
                     <option key={appointment.id} value={appointment.id}>
-                      {animal?.name} - {appointment.description} ({appointment.date.toLocaleDateString('pt-BR')})
+                      {animal?.name} - {appointment.description} (
+                      {appointment.date.toLocaleDateString('pt-BR')})
                     </option>
                   );
                 })}
@@ -82,7 +94,12 @@ export function ExpenseForm({ expense, onSubmit, onCancel, isOpen }: ExpenseForm
               </label>
               <select
                 value={formData.category}
-                onChange={(e) => setFormData({ ...formData, category: e.target.value })}
+                onChange={(e) =>
+                  setFormData({
+                    ...formData,
+                    category: e.target.value as Expense['category'],
+                  })
+                }
                 className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
                 required
               >
@@ -101,7 +118,9 @@ export function ExpenseForm({ expense, onSubmit, onCancel, isOpen }: ExpenseForm
               <input
                 type="text"
                 value={formData.description}
-                onChange={(e) => setFormData({ ...formData, description: e.target.value })}
+                onChange={(e) =>
+                  setFormData({ ...formData, description: e.target.value })
+                }
                 className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
                 placeholder="Descreva o gasto..."
                 required
@@ -117,7 +136,12 @@ export function ExpenseForm({ expense, onSubmit, onCancel, isOpen }: ExpenseForm
                 min="0"
                 step="0.01"
                 value={formData.amount}
-                onChange={(e) => setFormData({ ...formData, amount: parseFloat(e.target.value) || 0 })}
+                onChange={(e) =>
+                  setFormData({
+                    ...formData,
+                    amount: parseFloat(e.target.value) || 0,
+                  })
+                }
                 className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
                 required
               />
@@ -130,7 +154,9 @@ export function ExpenseForm({ expense, onSubmit, onCancel, isOpen }: ExpenseForm
               <input
                 type="datetime-local"
                 value={formData.date}
-                onChange={(e) => setFormData({ ...formData, date: e.target.value })}
+                onChange={(e) =>
+                  setFormData({ ...formData, date: e.target.value })
+                }
                 className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
                 required
               />

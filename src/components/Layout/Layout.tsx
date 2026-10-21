@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import { Sidebar } from './Sidebar';
-import { Header } from './Header';
 import { User } from '../../types';
+import { Header } from './Header';
+import { Sidebar } from './Sidebar';
 
 interface LayoutProps {
   user: User;
@@ -22,7 +22,13 @@ const pageTitles: Record<string, string> = {
   settings: 'Configurações',
 };
 
-export function Layout({ user, onLogout, currentPage, onPageChange, children }: LayoutProps) {
+export function Layout({
+  user,
+  onLogout,
+  currentPage,
+  onPageChange,
+  children,
+}: LayoutProps) {
   const [sidebarCollapsed, setSidebarCollapsed] = useState(false);
 
   return (
@@ -34,18 +40,16 @@ export function Layout({ user, onLogout, currentPage, onPageChange, children }: 
         onLogout={onLogout}
         isCollapsed={sidebarCollapsed}
       />
-      
+
       <div className="flex-1 flex flex-col min-w-0">
         <Header
           user={user}
           onToggleSidebar={() => setSidebarCollapsed(!sidebarCollapsed)}
           currentPageTitle={pageTitles[currentPage] || 'Dashboard'}
         />
-        
+
         <main className="flex-1 overflow-auto p-6">
-          <div className="animate-fade-in">
-            {children}
-          </div>
+          <div className="animate-fade-in">{children}</div>
         </main>
       </div>
     </div>
