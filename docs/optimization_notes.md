@@ -612,3 +612,5 @@
 
 * [2026-10-31 02:04:43] improve applied to internal configs (Ref: 0f48631a-7)
 
+* [2026-10-31 02:04:43] clean applied to module structure (Ref: 0f48631a-8)
+
