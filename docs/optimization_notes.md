@@ -150,3 +150,5 @@
 
 * [2026-10-31 02:02:42] improve applied to utilities (Ref: 9ec5215b-26)
 
+* [2026-10-31 02:02:42] optimize applied to internal configs (Ref: 9ec5215b-27)
+
