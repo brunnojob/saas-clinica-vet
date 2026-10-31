@@ -290,3 +290,5 @@
 
 * [2026-10-31 02:03:04] clean applied to utilities (Ref: 4de09c7d-46)
 
+* [2026-10-31 02:03:04] format applied to type hints (Ref: 4de09c7d-47)
+
