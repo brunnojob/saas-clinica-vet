@@ -360,3 +360,5 @@
 
 * [2026-10-31 02:03:21] improve applied to module structure (Ref: be52ca35-31)
 
+* [2026-10-31 02:03:21] improve applied to utilities (Ref: be52ca35-32)
+
