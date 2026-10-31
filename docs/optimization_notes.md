@@ -272,3 +272,5 @@
 
 * [2026-10-31 02:03:02] format applied to internal configs (Ref: 4de09c7d-37)
 
+* [2026-10-31 02:03:02] format applied to type hints (Ref: 4de09c7d-38)
+
