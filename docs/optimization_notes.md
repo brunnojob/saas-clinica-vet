@@ -382,3 +382,5 @@
 
 * [2026-10-31 02:03:23] optimize applied to internal configs (Ref: be52ca35-42)
 
+* [2026-10-31 02:03:23] clean applied to internal configs (Ref: be52ca35-43)
+
