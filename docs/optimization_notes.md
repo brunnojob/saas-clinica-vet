@@ -372,3 +372,5 @@
 
 * [2026-10-31 02:03:22] format applied to module structure (Ref: be52ca35-37)
 
+* [2026-10-31 02:03:22] clean applied to internal configs (Ref: be52ca35-38)
+
