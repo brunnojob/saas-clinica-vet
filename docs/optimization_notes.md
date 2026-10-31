@@ -136,3 +136,5 @@
 
 * [2026-10-31 02:02:41] optimize applied to type hints (Ref: 9ec5215b-19)
 
+* [2026-10-31 02:02:42] clean applied to internal configs (Ref: 9ec5215b-20)
+
