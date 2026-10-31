@@ -148,3 +148,5 @@
 
 * [2026-10-31 02:02:42] update applied to type hints (Ref: 9ec5215b-25)
 
+* [2026-10-31 02:02:42] improve applied to utilities (Ref: 9ec5215b-26)
+
