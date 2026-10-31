@@ -300,3 +300,5 @@
 
 * [2026-10-31 02:03:16] format applied to type hints (Ref: be52ca35-1)
 
+* [2026-10-31 02:03:16] improve applied to inline comments (Ref: be52ca35-2)
+
