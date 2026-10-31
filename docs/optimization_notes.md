@@ -422,3 +422,5 @@
 
 * [2026-10-31 02:03:37] optimize applied to utilities (Ref: dc6aa83c-12)
 
+* [2026-10-31 02:03:37] improve applied to inline comments (Ref: dc6aa83c-13)
+
