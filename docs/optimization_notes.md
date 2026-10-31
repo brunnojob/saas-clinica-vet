@@ -574,3 +574,5 @@
 
 * [2026-10-31 02:03:58] update applied to utilities (Ref: 822cbbab-38)
 
+* [2026-10-31 02:03:58] improve applied to inline comments (Ref: 822cbbab-39)
+
