@@ -558,3 +558,5 @@
 
 * [2026-10-31 02:03:57] update applied to internal configs (Ref: 822cbbab-30)
 
+* [2026-10-31 02:03:57] improve applied to utilities (Ref: 822cbbab-31)
+
