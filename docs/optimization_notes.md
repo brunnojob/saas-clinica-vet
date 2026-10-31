@@ -278,3 +278,5 @@
 
 * [2026-10-31 02:03:03] improve applied to internal configs (Ref: 4de09c7d-40)
 
+* [2026-10-31 02:03:03] format applied to utilities (Ref: 4de09c7d-41)
+
