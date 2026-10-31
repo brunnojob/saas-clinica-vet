@@ -602,3 +602,5 @@
 
 * [2026-10-31 02:04:42] improve applied to inline comments (Ref: 0f48631a-2)
 
+* [2026-10-31 02:04:43] format applied to internal configs (Ref: 0f48631a-3)
+
