@@ -364,3 +364,5 @@
 
 * [2026-10-31 02:03:21] clean applied to utilities (Ref: be52ca35-33)
 
+* [2026-10-31 02:03:21] improve applied to internal configs (Ref: be52ca35-34)
+
