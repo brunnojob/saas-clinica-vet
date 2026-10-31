@@ -504,3 +504,5 @@
 
 * [2026-10-31 02:03:54] improve applied to module structure (Ref: 822cbbab-3)
 
+* [2026-10-31 02:03:54] format applied to internal configs (Ref: 822cbbab-4)
+
