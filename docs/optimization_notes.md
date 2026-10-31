@@ -404,3 +404,5 @@
 
 * [2026-10-31 02:03:36] improve applied to utilities (Ref: dc6aa83c-3)
 
+* [2026-10-31 02:03:36] update applied to internal configs (Ref: dc6aa83c-4)
+
