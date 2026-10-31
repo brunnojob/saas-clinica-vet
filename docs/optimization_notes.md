@@ -184,3 +184,5 @@
 
 * [2026-10-31 02:02:45] improve applied to type hints (Ref: 9ec5215b-43)
 
+* [2026-10-31 02:02:45] improve applied to internal configs (Ref: 9ec5215b-44)
+
