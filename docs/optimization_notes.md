@@ -550,3 +550,5 @@
 
 * [2026-10-31 02:03:56] optimize applied to inline comments (Ref: 822cbbab-26)
 
+* [2026-10-31 02:03:57] improve applied to internal configs (Ref: 822cbbab-27)
+
