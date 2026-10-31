@@ -502,3 +502,5 @@
 
 * [2026-10-31 02:03:54] improve applied to type hints (Ref: 822cbbab-2)
 
+* [2026-10-31 02:03:54] improve applied to module structure (Ref: 822cbbab-3)
+
