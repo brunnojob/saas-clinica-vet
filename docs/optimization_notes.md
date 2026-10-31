@@ -694,3 +694,5 @@
 
 * [2026-10-31 02:04:48] optimize applied to module structure (Ref: 0f48631a-48)
 
+* [2026-10-31 02:04:48] update applied to internal configs (Ref: 0f48631a-49)
+
