@@ -58,3 +58,5 @@
 
 * [2026-10-31 02:02:22] improve applied to utilities (Ref: e5bc7b4d-30)
 
+* [2026-10-31 02:02:23] update applied to internal configs (Ref: e5bc7b4d-31)
+
