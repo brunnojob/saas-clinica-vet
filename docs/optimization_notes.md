@@ -470,3 +470,5 @@
 
 * [2026-10-31 02:03:40] improve applied to type hints (Ref: dc6aa83c-36)
 
+* [2026-10-31 02:03:40] clean applied to inline comments (Ref: dc6aa83c-37)
+
