@@ -660,3 +660,5 @@
 
 * [2026-10-31 02:04:46] update applied to type hints (Ref: 0f48631a-31)
 
+* [2026-10-31 02:04:46] format applied to internal configs (Ref: 0f48631a-32)
+
