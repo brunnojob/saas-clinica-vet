@@ -566,3 +566,5 @@
 
 * [2026-10-31 02:03:57] format applied to utilities (Ref: 822cbbab-34)
 
+* [2026-10-31 02:03:58] improve applied to internal configs (Ref: 822cbbab-35)
+
