@@ -174,3 +174,5 @@
 
 * [2026-10-31 02:02:44] optimize applied to utilities (Ref: 9ec5215b-38)
 
+* [2026-10-31 02:02:44] clean applied to internal configs (Ref: 9ec5215b-39)
+
