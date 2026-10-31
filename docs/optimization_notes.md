@@ -126,3 +126,5 @@
 
 * [2026-10-31 02:02:41] format applied to internal configs (Ref: 9ec5215b-14)
 
+* [2026-10-31 02:02:41] format applied to module structure (Ref: 9ec5215b-15)
+
