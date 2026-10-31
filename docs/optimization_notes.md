@@ -346,3 +346,5 @@
 
 * [2026-10-31 02:03:19] format applied to utilities (Ref: be52ca35-24)
 
+* [2026-10-31 02:03:19] improve applied to internal configs (Ref: be52ca35-25)
+
