@@ -578,3 +578,5 @@
 
 * [2026-10-31 02:03:58] format applied to type hints (Ref: 822cbbab-40)
 
+* [2026-10-31 02:03:59] improve applied to internal configs (Ref: 822cbbab-41)
+
