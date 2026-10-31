@@ -856,3 +856,5 @@
 
 * [2026-10-31 02:05:22] format applied to utilities (Ref: 1dba3ebb-29)
 
+* [2026-10-31 02:05:22] format applied to module structure (Ref: 1dba3ebb-30)
+
