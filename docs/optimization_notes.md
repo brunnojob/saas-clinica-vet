@@ -878,3 +878,5 @@
 
 * [2026-10-31 02:05:24] improve applied to module structure (Ref: 1dba3ebb-40)
 
+* [2026-10-31 02:05:24] improve applied to internal configs (Ref: 1dba3ebb-41)
+
