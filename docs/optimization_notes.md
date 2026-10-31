@@ -584,3 +584,5 @@
 
 * [2026-10-31 02:03:59] clean applied to module structure (Ref: 822cbbab-43)
 
+* [2026-10-31 02:03:59] clean applied to inline comments (Ref: 822cbbab-44)
+
