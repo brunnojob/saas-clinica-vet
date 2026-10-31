@@ -604,3 +604,5 @@
 
 * [2026-10-31 02:04:43] format applied to internal configs (Ref: 0f48631a-3)
 
+* [2026-10-31 02:04:43] clean applied to inline comments (Ref: 0f48631a-4)
+
