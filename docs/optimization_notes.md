@@ -552,3 +552,5 @@
 
 * [2026-10-31 02:03:57] improve applied to internal configs (Ref: 822cbbab-27)
 
+* [2026-10-31 02:03:57] format applied to inline comments (Ref: 822cbbab-28)
+
