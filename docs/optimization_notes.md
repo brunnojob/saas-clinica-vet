@@ -110,3 +110,5 @@
 
 * [2026-10-31 02:02:39] format applied to internal configs (Ref: 9ec5215b-6)
 
+* [2026-10-31 02:02:40] format applied to inline comments (Ref: 9ec5215b-7)
+
