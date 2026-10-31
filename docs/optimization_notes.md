@@ -844,3 +844,5 @@
 
 * [2026-10-31 02:05:21] clean applied to internal configs (Ref: 1dba3ebb-23)
 
+* [2026-10-31 02:05:21] clean applied to inline comments (Ref: 1dba3ebb-24)
+
