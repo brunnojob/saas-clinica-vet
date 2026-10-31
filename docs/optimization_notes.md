@@ -884,3 +884,5 @@
 
 * [2026-10-31 02:05:24] improve applied to module structure (Ref: 1dba3ebb-43)
 
+* [2026-10-31 02:05:25] update applied to internal configs (Ref: 1dba3ebb-44)
+
