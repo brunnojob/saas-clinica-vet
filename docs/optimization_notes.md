@@ -318,3 +318,5 @@
 
 * [2026-10-31 02:03:17] improve applied to internal configs (Ref: be52ca35-10)
 
+* [2026-10-31 02:03:17] update applied to module structure (Ref: be52ca35-11)
+
