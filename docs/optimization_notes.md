@@ -678,3 +678,5 @@
 
 * [2026-10-31 02:04:47] optimize applied to internal configs (Ref: 0f48631a-40)
 
+* [2026-10-31 02:04:47] clean applied to module structure (Ref: 0f48631a-41)
+
