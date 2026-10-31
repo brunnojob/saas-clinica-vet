@@ -1128,3 +1128,5 @@
 
 * [2026-10-31 02:06:44] optimize applied to internal configs (Ref: 543e7249-15)
 
+* [2026-10-31 02:06:44] clean applied to internal configs (Ref: 543e7249-16)
+
