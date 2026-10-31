@@ -758,3 +758,5 @@
 
 * [2026-10-31 02:05:04] format applied to type hints (Ref: 97d6c96e-30)
 
+* [2026-10-31 02:05:04] format applied to utilities (Ref: 97d6c96e-31)
+
