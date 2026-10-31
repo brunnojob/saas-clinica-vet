@@ -158,3 +158,5 @@
 
 * [2026-10-31 02:02:43] update applied to internal configs (Ref: 9ec5215b-30)
 
+* [2026-10-31 02:02:43] improve applied to internal configs (Ref: 9ec5215b-31)
+
