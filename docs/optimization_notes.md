@@ -276,3 +276,5 @@
 
 * [2026-10-31 02:03:02] clean applied to module structure (Ref: 4de09c7d-39)
 
+* [2026-10-31 02:03:03] improve applied to internal configs (Ref: 4de09c7d-40)
+
