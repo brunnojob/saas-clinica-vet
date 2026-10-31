@@ -570,3 +570,5 @@
 
 * [2026-10-31 02:03:58] improve applied to inline comments (Ref: 822cbbab-36)
 
+* [2026-10-31 02:03:58] update applied to module structure (Ref: 822cbbab-37)
+
