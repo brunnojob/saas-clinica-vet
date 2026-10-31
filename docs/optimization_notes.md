@@ -938,3 +938,5 @@
 
 * [2026-10-31 02:05:43] update applied to utilities (Ref: 530f7aa2-20)
 
+* [2026-10-31 02:05:43] improve applied to module structure (Ref: 530f7aa2-21)
+
