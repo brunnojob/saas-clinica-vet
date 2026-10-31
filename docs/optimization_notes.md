@@ -564,3 +564,5 @@
 
 * [2026-10-31 02:03:57] optimize applied to internal configs (Ref: 822cbbab-33)
 
+* [2026-10-31 02:03:57] format applied to utilities (Ref: 822cbbab-34)
+
