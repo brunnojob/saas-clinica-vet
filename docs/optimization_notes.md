@@ -344,3 +344,5 @@
 
 * [2026-10-31 02:03:19] clean applied to module structure (Ref: be52ca35-23)
 
+* [2026-10-31 02:03:19] format applied to utilities (Ref: be52ca35-24)
+
