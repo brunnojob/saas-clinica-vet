@@ -152,3 +152,5 @@
 
 * [2026-10-31 02:02:42] optimize applied to internal configs (Ref: 9ec5215b-27)
 
+* [2026-10-31 02:02:43] improve applied to internal configs (Ref: 9ec5215b-28)
+
