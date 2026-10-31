@@ -650,3 +650,5 @@
 
 * [2026-10-31 02:04:45] update applied to utilities (Ref: 0f48631a-26)
 
+* [2026-10-31 02:04:45] improve applied to internal configs (Ref: 0f48631a-27)
+
