@@ -108,3 +108,5 @@
 
 * [2026-10-31 02:02:39] optimize applied to module structure (Ref: 9ec5215b-5)
 
+* [2026-10-31 02:02:39] format applied to internal configs (Ref: 9ec5215b-6)
+
