@@ -950,3 +950,5 @@
 
 * [2026-10-31 02:05:45] improve applied to module structure (Ref: 530f7aa2-26)
 
+* [2026-10-31 02:05:46] format applied to utilities (Ref: 530f7aa2-27)
+
