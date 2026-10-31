@@ -1122,3 +1122,5 @@
 
 * [2026-10-31 02:06:43] format applied to utilities (Ref: 543e7249-12)
 
+* [2026-10-31 02:06:43] improve applied to inline comments (Ref: 543e7249-13)
+
