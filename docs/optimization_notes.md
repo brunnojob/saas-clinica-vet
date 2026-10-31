@@ -194,3 +194,5 @@
 
 * [2026-10-31 02:02:46] improve applied to module structure (Ref: 9ec5215b-48)
 
+* [2026-10-31 02:02:46] update applied to utilities (Ref: 9ec5215b-49)
+
