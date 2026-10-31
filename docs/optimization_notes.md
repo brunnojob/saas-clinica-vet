@@ -902,3 +902,5 @@
 
 * [2026-10-31 02:05:40] update applied to module structure (Ref: 530f7aa2-2)
 
+* [2026-10-31 02:05:40] improve applied to inline comments (Ref: 530f7aa2-3)
+
