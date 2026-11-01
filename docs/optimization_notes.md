@@ -1802,3 +1802,5 @@
 
 * [2026-11-01 16:23:42] optimize applied to internal configs (Ref: 9d3bb42f-2)
 
+* [2026-11-01 16:23:42] update applied to utilities (Ref: 9d3bb42f-3)
+
