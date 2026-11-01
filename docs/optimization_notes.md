@@ -1526,3 +1526,5 @@
 
 * [2026-11-01 16:20:12] clean applied to utilities (Ref: 26317617-14)
 
+* [2026-11-01 16:20:12] format applied to inline comments (Ref: 26317617-15)
+
