@@ -1858,3 +1858,5 @@
 
 * [2026-11-01 16:23:47] format applied to internal configs (Ref: 9d3bb42f-30)
 
+* [2026-11-01 16:23:47] update applied to module structure (Ref: 9d3bb42f-31)
+
