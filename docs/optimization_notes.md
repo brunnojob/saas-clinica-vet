@@ -2068,3 +2068,5 @@
 
 * [2026-11-01 16:24:36] update applied to utilities (Ref: e422adc3-35)
 
+* [2026-11-01 16:24:36] clean applied to module structure (Ref: e422adc3-36)
+
