@@ -3302,3 +3302,5 @@
 
 * [2026-11-01 17:28:34] format applied to internal configs (Ref: 2ef2c293-2)
 
+* [2026-11-01 17:28:34] format applied to module structure (Ref: 2ef2c293-3)
+
