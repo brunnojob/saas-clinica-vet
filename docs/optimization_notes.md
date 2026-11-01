@@ -2732,3 +2732,5 @@
 
 * [2026-11-01 16:36:23] format applied to inline comments (Ref: c5712205-17)
 
+* [2026-11-01 16:36:23] format applied to type hints (Ref: c5712205-18)
+
