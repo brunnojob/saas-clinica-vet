@@ -1270,3 +1270,5 @@
 
 * [2026-11-01 16:18:59] improve applied to internal configs (Ref: 51645eeb-36)
 
+* [2026-11-01 16:18:59] update applied to internal configs (Ref: 51645eeb-37)
+
