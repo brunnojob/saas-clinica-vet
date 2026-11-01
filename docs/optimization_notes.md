@@ -2706,3 +2706,5 @@
 
 * [2026-11-01 16:36:21] improve applied to module structure (Ref: c5712205-4)
 
+* [2026-11-01 16:36:21] update applied to internal configs (Ref: c5712205-5)
+
