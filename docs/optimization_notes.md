@@ -1780,3 +1780,5 @@
 
 * [2026-11-01 16:21:04] improve applied to module structure (Ref: 70ef2e06-41)
 
+* [2026-11-01 16:21:04] format applied to internal configs (Ref: 70ef2e06-42)
+
