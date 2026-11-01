@@ -3358,3 +3358,5 @@
 
 * [2026-11-01 17:28:42] format applied to type hints (Ref: 2ef2c293-30)
 
+* [2026-11-01 17:28:43] update applied to utilities (Ref: 2ef2c293-31)
+
