@@ -3126,3 +3126,5 @@
 
 * [2026-11-01 17:27:40] optimize applied to internal configs (Ref: c4af56cd-14)
 
+* [2026-11-01 17:27:40] clean applied to internal configs (Ref: c4af56cd-15)
+
