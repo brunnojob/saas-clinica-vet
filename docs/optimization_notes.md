@@ -1808,3 +1808,5 @@
 
 * [2026-11-01 16:23:43] format applied to inline comments (Ref: 9d3bb42f-5)
 
+* [2026-11-01 16:23:43] clean applied to module structure (Ref: 9d3bb42f-6)
+
