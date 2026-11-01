@@ -2166,3 +2166,5 @@
 
 * [2026-11-01 16:25:02] optimize applied to internal configs (Ref: 6b1982ab-34)
 
+* [2026-11-01 16:25:03] update applied to utilities (Ref: 6b1982ab-35)
+
