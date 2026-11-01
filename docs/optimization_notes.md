@@ -1482,3 +1482,5 @@
 
 * [2026-11-01 16:19:54] format applied to utilities (Ref: b3539eda-42)
 
+* [2026-11-01 16:19:54] format applied to type hints (Ref: b3539eda-43)
+
