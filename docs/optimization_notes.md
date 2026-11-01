@@ -3108,3 +3108,5 @@
 
 * [2026-11-01 17:27:39] format applied to inline comments (Ref: c4af56cd-5)
 
+* [2026-11-01 17:27:39] format applied to type hints (Ref: c4af56cd-6)
+
