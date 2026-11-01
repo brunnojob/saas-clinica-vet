@@ -2456,3 +2456,5 @@
 
 * [2026-11-01 16:35:10] format applied to type hints (Ref: a75e8d3c-29)
 
+* [2026-11-01 16:35:10] format applied to internal configs (Ref: a75e8d3c-30)
+
