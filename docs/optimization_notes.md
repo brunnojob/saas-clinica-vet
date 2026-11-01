@@ -3456,3 +3456,5 @@
 
 * [2026-11-01 17:29:17] format applied to inline comments (Ref: 99d6d9ea-29)
 
+* [2026-11-01 17:29:18] optimize applied to internal configs (Ref: 99d6d9ea-30)
+
