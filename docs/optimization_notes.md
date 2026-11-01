@@ -1702,3 +1702,5 @@
 
 * [2026-11-01 16:20:51] optimize applied to inline comments (Ref: 70ef2e06-2)
 
+* [2026-11-01 16:20:52] format applied to inline comments (Ref: 70ef2e06-3)
+
