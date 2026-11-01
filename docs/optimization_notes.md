@@ -2550,3 +2550,5 @@
 
 * [2026-11-01 16:35:33] optimize applied to type hints (Ref: 1976efcc-26)
 
+* [2026-11-01 16:35:34] improve applied to internal configs (Ref: 1976efcc-27)
+
