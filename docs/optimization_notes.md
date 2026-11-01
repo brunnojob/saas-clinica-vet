@@ -3054,3 +3054,5 @@
 
 * [2026-11-01 17:27:20] update applied to internal configs (Ref: 43b4bfab-28)
 
+* [2026-11-01 17:27:20] clean applied to module structure (Ref: 43b4bfab-29)
+
