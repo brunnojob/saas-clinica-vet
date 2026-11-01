@@ -2374,3 +2374,5 @@
 
 * [2026-11-01 16:26:06] update applied to module structure (Ref: 78b5bf6b-38)
 
+* [2026-11-01 16:26:06] improve applied to inline comments (Ref: 78b5bf6b-39)
+
