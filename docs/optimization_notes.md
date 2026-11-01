@@ -2728,3 +2728,5 @@
 
 * [2026-11-01 16:36:22] clean applied to internal configs (Ref: c5712205-15)
 
+* [2026-11-01 16:36:22] format applied to inline comments (Ref: c5712205-16)
+
