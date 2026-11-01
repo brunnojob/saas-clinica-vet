@@ -3246,3 +3246,5 @@
 
 * [2026-11-01 17:28:09] improve applied to module structure (Ref: f32a1ff2-24)
 
+* [2026-11-01 17:28:09] format applied to inline comments (Ref: f32a1ff2-25)
+
