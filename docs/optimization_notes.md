@@ -3202,3 +3202,5 @@
 
 * [2026-11-01 17:28:06] clean applied to utilities (Ref: f32a1ff2-2)
 
+* [2026-11-01 17:28:06] clean applied to module structure (Ref: f32a1ff2-3)
+
