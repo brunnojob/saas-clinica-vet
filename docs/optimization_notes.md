@@ -3122,3 +3122,5 @@
 
 * [2026-11-01 17:27:40] clean applied to internal configs (Ref: c4af56cd-12)
 
+* [2026-11-01 17:27:40] clean applied to type hints (Ref: c4af56cd-13)
+
