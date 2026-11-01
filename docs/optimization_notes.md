@@ -2570,3 +2570,5 @@
 
 * [2026-11-01 16:35:35] improve applied to type hints (Ref: 1976efcc-36)
 
+* [2026-11-01 16:35:35] format applied to type hints (Ref: 1976efcc-37)
+
