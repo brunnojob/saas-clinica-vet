@@ -2066,3 +2066,5 @@
 
 * [2026-11-01 16:24:36] clean applied to internal configs (Ref: e422adc3-34)
 
+* [2026-11-01 16:24:36] update applied to utilities (Ref: e422adc3-35)
+
