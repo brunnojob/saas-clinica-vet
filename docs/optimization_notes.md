@@ -3248,3 +3248,5 @@
 
 * [2026-11-01 17:28:09] format applied to inline comments (Ref: f32a1ff2-25)
 
+* [2026-11-01 17:28:09] format applied to utilities (Ref: f32a1ff2-26)
+
