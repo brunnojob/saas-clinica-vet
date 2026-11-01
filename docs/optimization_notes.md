@@ -2912,3 +2912,5 @@
 
 * [2026-11-01 16:37:11] clean applied to module structure (Ref: 08867f6c-7)
 
+* [2026-11-01 16:37:11] update applied to utilities (Ref: 08867f6c-8)
+
