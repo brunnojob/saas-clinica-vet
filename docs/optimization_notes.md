@@ -3112,3 +3112,5 @@
 
 * [2026-11-01 17:27:39] format applied to utilities (Ref: c4af56cd-7)
 
+* [2026-11-01 17:27:39] format applied to inline comments (Ref: c4af56cd-8)
+
