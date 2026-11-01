@@ -2122,3 +2122,5 @@
 
 * [2026-11-01 16:24:54] update applied to module structure (Ref: 6b1982ab-12)
 
+* [2026-11-01 16:24:55] improve applied to inline comments (Ref: 6b1982ab-13)
+
