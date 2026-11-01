@@ -2142,3 +2142,5 @@
 
 * [2026-11-01 16:24:58] update applied to internal configs (Ref: 6b1982ab-22)
 
+* [2026-11-01 16:24:58] improve applied to inline comments (Ref: 6b1982ab-23)
+
