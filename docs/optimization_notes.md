@@ -2678,3 +2678,5 @@
 
 * [2026-11-01 16:36:05] format applied to type hints (Ref: f9d48065-40)
 
+* [2026-11-01 16:36:05] format applied to utilities (Ref: f9d48065-41)
+
