@@ -2552,3 +2552,5 @@
 
 * [2026-11-01 16:35:34] improve applied to internal configs (Ref: 1976efcc-27)
 
+* [2026-11-01 16:35:34] format applied to module structure (Ref: 1976efcc-28)
+
