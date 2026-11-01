@@ -3008,3 +3008,5 @@
 
 * [2026-11-01 17:27:15] format applied to type hints (Ref: 43b4bfab-5)
 
+* [2026-11-01 17:27:15] clean applied to utilities (Ref: 43b4bfab-6)
+
