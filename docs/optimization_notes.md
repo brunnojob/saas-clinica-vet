@@ -3344,3 +3344,5 @@
 
 * [2026-11-01 17:28:39] format applied to type hints (Ref: 2ef2c293-23)
 
+* [2026-11-01 17:28:40] clean applied to module structure (Ref: 2ef2c293-24)
+
