@@ -1674,3 +1674,5 @@
 
 * [2026-11-01 16:20:38] update applied to type hints (Ref: 223a07be-38)
 
+* [2026-11-01 16:20:38] update applied to module structure (Ref: 223a07be-39)
+
