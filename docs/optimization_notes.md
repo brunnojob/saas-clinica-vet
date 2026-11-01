@@ -1734,3 +1734,5 @@
 
 * [2026-11-01 16:20:56] optimize applied to type hints (Ref: 70ef2e06-18)
 
+* [2026-11-01 16:20:56] update applied to internal configs (Ref: 70ef2e06-19)
+
