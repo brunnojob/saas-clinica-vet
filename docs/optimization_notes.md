@@ -1524,3 +1524,5 @@
 
 * [2026-11-01 16:20:12] optimize applied to type hints (Ref: 26317617-13)
 
+* [2026-11-01 16:20:12] clean applied to utilities (Ref: 26317617-14)
+
