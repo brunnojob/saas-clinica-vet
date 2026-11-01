@@ -2902,3 +2902,5 @@
 
 * [2026-11-01 16:37:10] format applied to inline comments (Ref: 08867f6c-2)
 
+* [2026-11-01 16:37:10] format applied to internal configs (Ref: 08867f6c-3)
+
