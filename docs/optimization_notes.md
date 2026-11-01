@@ -2246,3 +2246,5 @@
 
 * [2026-11-01 16:25:37] improve applied to type hints (Ref: 44eda917-24)
 
+* [2026-11-01 16:25:37] clean applied to module structure (Ref: 44eda917-25)
+
