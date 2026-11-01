@@ -3286,3 +3286,5 @@
 
 * [2026-11-01 17:28:12] clean applied to utilities (Ref: f32a1ff2-44)
 
+* [2026-11-01 17:28:12] update applied to internal configs (Ref: f32a1ff2-45)
+
