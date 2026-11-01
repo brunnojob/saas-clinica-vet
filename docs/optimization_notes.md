@@ -1948,3 +1948,5 @@
 
 * [2026-11-01 16:24:07] update applied to utilities (Ref: a0f6d977-25)
 
+* [2026-11-01 16:24:07] update applied to internal configs (Ref: a0f6d977-26)
+
