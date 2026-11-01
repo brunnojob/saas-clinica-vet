@@ -3020,3 +3020,5 @@
 
 * [2026-11-01 17:27:16] update applied to internal configs (Ref: 43b4bfab-11)
 
+* [2026-11-01 17:27:16] update applied to module structure (Ref: 43b4bfab-12)
+
