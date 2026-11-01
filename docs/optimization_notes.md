@@ -2380,3 +2380,5 @@
 
 * [2026-11-01 16:26:07] update applied to module structure (Ref: 78b5bf6b-41)
 
+* [2026-11-01 16:26:07] format applied to utilities (Ref: 78b5bf6b-42)
+
