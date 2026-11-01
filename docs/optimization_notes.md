@@ -1478,3 +1478,5 @@
 
 * [2026-11-01 16:19:53] improve applied to internal configs (Ref: b3539eda-40)
 
+* [2026-11-01 16:19:54] clean applied to module structure (Ref: b3539eda-41)
+
