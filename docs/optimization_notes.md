@@ -2594,3 +2594,5 @@
 
 * [2026-11-01 16:35:37] format applied to utilities (Ref: 1976efcc-48)
 
+* [2026-11-01 16:35:37] improve applied to module structure (Ref: 1976efcc-49)
+
