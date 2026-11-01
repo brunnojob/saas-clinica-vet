@@ -1798,3 +1798,5 @@
 
 * [2026-11-01 16:21:06] improve applied to module structure (Ref: 70ef2e06-50)
 
+* [2026-11-01 16:23:42] optimize applied to internal configs (Ref: 9d3bb42f-1)
+
