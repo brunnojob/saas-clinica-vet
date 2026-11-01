@@ -1330,3 +1330,5 @@
 
 * [2026-11-01 16:19:19] format applied to type hints (Ref: ffbdf564-16)
 
+* [2026-11-01 16:19:19] clean applied to module structure (Ref: ffbdf564-17)
+
