@@ -2250,3 +2250,5 @@
 
 * [2026-11-01 16:25:37] format applied to internal configs (Ref: 44eda917-26)
 
+* [2026-11-01 16:25:38] format applied to type hints (Ref: 44eda917-27)
+
