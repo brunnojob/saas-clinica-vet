@@ -2426,3 +2426,5 @@
 
 * [2026-11-01 16:35:08] clean applied to type hints (Ref: a75e8d3c-14)
 
+* [2026-11-01 16:35:08] format applied to internal configs (Ref: a75e8d3c-15)
+
