@@ -2296,3 +2296,5 @@
 
 * [2026-11-01 16:25:43] optimize applied to internal configs (Ref: 44eda917-49)
 
+* [2026-11-01 16:25:43] update applied to utilities (Ref: 44eda917-50)
+
