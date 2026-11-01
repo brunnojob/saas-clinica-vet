@@ -1640,3 +1640,5 @@
 
 * [2026-11-01 16:20:35] clean applied to module structure (Ref: 223a07be-21)
 
+* [2026-11-01 16:20:35] clean applied to inline comments (Ref: 223a07be-22)
+
