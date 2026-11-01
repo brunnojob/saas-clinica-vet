@@ -2778,3 +2778,5 @@
 
 * [2026-11-01 16:36:27] improve applied to internal configs (Ref: c5712205-40)
 
+* [2026-11-01 16:36:28] improve applied to inline comments (Ref: c5712205-41)
+
