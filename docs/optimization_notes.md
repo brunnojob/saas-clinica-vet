@@ -3044,3 +3044,5 @@
 
 * [2026-11-01 17:27:19] improve applied to type hints (Ref: 43b4bfab-23)
 
+* [2026-11-01 17:27:19] format applied to module structure (Ref: 43b4bfab-24)
+
