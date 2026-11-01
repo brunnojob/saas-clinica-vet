@@ -2602,3 +2602,5 @@
 
 * [2026-11-01 16:35:53] clean applied to module structure (Ref: f9d48065-2)
 
+* [2026-11-01 16:35:54] clean applied to internal configs (Ref: f9d48065-3)
+
