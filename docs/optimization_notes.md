@@ -3052,3 +3052,5 @@
 
 * [2026-11-01 17:27:20] improve applied to type hints (Ref: 43b4bfab-27)
 
+* [2026-11-01 17:27:20] update applied to internal configs (Ref: 43b4bfab-28)
+
