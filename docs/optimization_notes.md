@@ -2228,3 +2228,5 @@
 
 * [2026-11-01 16:25:34] format applied to utilities (Ref: 44eda917-15)
 
+* [2026-11-01 16:25:34] update applied to inline comments (Ref: 44eda917-16)
+
