@@ -2736,3 +2736,5 @@
 
 * [2026-11-01 16:36:23] improve applied to internal configs (Ref: c5712205-19)
 
+* [2026-11-01 16:36:23] optimize applied to type hints (Ref: c5712205-20)
+
