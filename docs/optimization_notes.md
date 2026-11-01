@@ -3080,3 +3080,5 @@
 
 * [2026-11-01 17:27:22] clean applied to internal configs (Ref: 43b4bfab-41)
 
+* [2026-11-01 17:27:22] format applied to utilities (Ref: 43b4bfab-42)
+
