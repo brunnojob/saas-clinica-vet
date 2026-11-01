@@ -2762,3 +2762,5 @@
 
 * [2026-11-01 16:36:26] update applied to inline comments (Ref: c5712205-32)
 
+* [2026-11-01 16:36:26] improve applied to module structure (Ref: c5712205-33)
+
