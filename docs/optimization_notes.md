@@ -2422,3 +2422,5 @@
 
 * [2026-11-01 16:35:07] update applied to internal configs (Ref: a75e8d3c-12)
 
+* [2026-11-01 16:35:08] improve applied to utilities (Ref: a75e8d3c-13)
+
