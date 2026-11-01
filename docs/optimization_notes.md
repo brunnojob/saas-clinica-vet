@@ -1638,3 +1638,5 @@
 
 * [2026-11-01 16:20:34] update applied to utilities (Ref: 223a07be-20)
 
+* [2026-11-01 16:20:35] clean applied to module structure (Ref: 223a07be-21)
+
