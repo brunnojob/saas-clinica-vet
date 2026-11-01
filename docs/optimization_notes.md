@@ -3032,3 +3032,5 @@
 
 * [2026-11-01 17:27:17] clean applied to internal configs (Ref: 43b4bfab-17)
 
+* [2026-11-01 17:27:18] improve applied to type hints (Ref: 43b4bfab-18)
+
