@@ -2262,3 +2262,5 @@
 
 * [2026-11-01 16:25:39] format applied to internal configs (Ref: 44eda917-32)
 
+* [2026-11-01 16:25:39] improve applied to utilities (Ref: 44eda917-33)
+
