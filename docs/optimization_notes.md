@@ -2512,3 +2512,5 @@
 
 * [2026-11-01 16:35:29] optimize applied to utilities (Ref: 1976efcc-7)
 
+* [2026-11-01 16:35:29] clean applied to inline comments (Ref: 1976efcc-8)
+
