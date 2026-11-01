@@ -1304,3 +1304,5 @@
 
 * [2026-11-01 16:19:15] update applied to type hints (Ref: ffbdf564-3)
 
+* [2026-11-01 16:19:16] update applied to utilities (Ref: ffbdf564-4)
+
