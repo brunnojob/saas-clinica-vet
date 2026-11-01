@@ -2584,3 +2584,5 @@
 
 * [2026-11-01 16:35:36] update applied to internal configs (Ref: 1976efcc-43)
 
+* [2026-11-01 16:35:37] format applied to utilities (Ref: 1976efcc-44)
+
