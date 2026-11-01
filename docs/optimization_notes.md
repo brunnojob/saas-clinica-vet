@@ -2384,3 +2384,5 @@
 
 * [2026-11-01 16:26:08] format applied to internal configs (Ref: 78b5bf6b-43)
 
+* [2026-11-01 16:26:08] format applied to module structure (Ref: 78b5bf6b-44)
+
