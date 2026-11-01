@@ -1320,3 +1320,5 @@
 
 * [2026-11-01 16:19:17] clean applied to type hints (Ref: ffbdf564-11)
 
+* [2026-11-01 16:19:18] clean applied to internal configs (Ref: ffbdf564-12)
+
