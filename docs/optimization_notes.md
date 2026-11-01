@@ -3010,3 +3010,5 @@
 
 * [2026-11-01 17:27:15] clean applied to utilities (Ref: 43b4bfab-6)
 
+* [2026-11-01 17:27:15] update applied to internal configs (Ref: 43b4bfab-7)
+
