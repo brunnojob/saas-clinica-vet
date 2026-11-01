@@ -1348,3 +1348,5 @@
 
 * [2026-11-01 16:19:20] improve applied to utilities (Ref: ffbdf564-25)
 
+* [2026-11-01 16:19:20] optimize applied to module structure (Ref: ffbdf564-26)
+
