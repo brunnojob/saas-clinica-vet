@@ -1562,3 +1562,5 @@
 
 * [2026-11-01 16:20:17] format applied to type hints (Ref: 26317617-32)
 
+* [2026-11-01 16:20:17] format applied to internal configs (Ref: 26317617-33)
+
