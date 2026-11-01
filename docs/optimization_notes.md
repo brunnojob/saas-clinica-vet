@@ -2042,3 +2042,5 @@
 
 * [2026-11-01 16:24:33] clean applied to module structure (Ref: e422adc3-22)
 
+* [2026-11-01 16:24:33] clean applied to utilities (Ref: e422adc3-23)
+
