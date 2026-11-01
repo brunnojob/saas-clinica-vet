@@ -2006,3 +2006,5 @@
 
 * [2026-11-01 16:24:28] format applied to module structure (Ref: e422adc3-4)
 
+* [2026-11-01 16:24:28] clean applied to type hints (Ref: e422adc3-5)
+
