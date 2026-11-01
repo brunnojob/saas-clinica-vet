@@ -1822,3 +1822,5 @@
 
 * [2026-11-01 16:23:44] update applied to utilities (Ref: 9d3bb42f-12)
 
+* [2026-11-01 16:23:44] clean applied to internal configs (Ref: 9d3bb42f-13)
+
