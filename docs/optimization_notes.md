@@ -1724,3 +1724,5 @@
 
 * [2026-11-01 16:20:54] clean applied to utilities (Ref: 70ef2e06-13)
 
+* [2026-11-01 16:20:55] update applied to type hints (Ref: 70ef2e06-14)
+
