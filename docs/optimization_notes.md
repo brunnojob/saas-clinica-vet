@@ -2396,3 +2396,5 @@
 
 * [2026-11-01 16:26:09] improve applied to utilities (Ref: 78b5bf6b-49)
 
+* [2026-11-01 16:26:09] format applied to utilities (Ref: 78b5bf6b-50)
+
