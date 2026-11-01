@@ -3254,3 +3254,5 @@
 
 * [2026-11-01 17:28:09] update applied to utilities (Ref: f32a1ff2-28)
 
+* [2026-11-01 17:28:09] optimize applied to inline comments (Ref: f32a1ff2-29)
+
