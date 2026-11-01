@@ -3472,3 +3472,5 @@
 
 * [2026-11-01 17:29:20] optimize applied to internal configs (Ref: 99d6d9ea-37)
 
+* [2026-11-01 17:29:20] update applied to internal configs (Ref: 99d6d9ea-38)
+
