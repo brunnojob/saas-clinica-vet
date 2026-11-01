@@ -1756,3 +1756,5 @@
 
 * [2026-11-01 16:21:01] format applied to type hints (Ref: 70ef2e06-29)
 
+* [2026-11-01 16:21:02] improve applied to utilities (Ref: 70ef2e06-30)
+
