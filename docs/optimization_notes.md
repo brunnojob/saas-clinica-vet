@@ -3238,3 +3238,5 @@
 
 * [2026-11-01 17:28:08] update applied to internal configs (Ref: f32a1ff2-20)
 
+* [2026-11-01 17:28:08] format applied to utilities (Ref: f32a1ff2-21)
+
