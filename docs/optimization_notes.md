@@ -2786,3 +2786,5 @@
 
 * [2026-11-01 16:36:28] format applied to utilities (Ref: c5712205-44)
 
+* [2026-11-01 16:36:28] optimize applied to internal configs (Ref: c5712205-45)
+
