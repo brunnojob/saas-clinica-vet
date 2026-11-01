@@ -2988,3 +2988,5 @@
 
 * [2026-11-01 16:37:17] improve applied to type hints (Ref: 08867f6c-45)
 
+* [2026-11-01 16:37:17] optimize applied to module structure (Ref: 08867f6c-46)
+
