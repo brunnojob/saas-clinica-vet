@@ -2642,3 +2642,5 @@
 
 * [2026-11-01 16:36:00] optimize applied to internal configs (Ref: f9d48065-22)
 
+* [2026-11-01 16:36:00] clean applied to internal configs (Ref: f9d48065-23)
+
