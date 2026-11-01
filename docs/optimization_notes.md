@@ -2610,3 +2610,5 @@
 
 * [2026-11-01 16:35:55] clean applied to type hints (Ref: f9d48065-6)
 
+* [2026-11-01 16:35:56] update applied to internal configs (Ref: f9d48065-7)
+
