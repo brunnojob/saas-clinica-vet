@@ -2614,3 +2614,5 @@
 
 * [2026-11-01 16:35:56] format applied to utilities (Ref: f9d48065-8)
 
+* [2026-11-01 16:35:56] improve applied to internal configs (Ref: f9d48065-9)
+
