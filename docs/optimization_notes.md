@@ -2746,3 +2746,5 @@
 
 * [2026-11-01 16:36:25] optimize applied to type hints (Ref: c5712205-24)
 
+* [2026-11-01 16:36:25] clean applied to module structure (Ref: c5712205-25)
+
