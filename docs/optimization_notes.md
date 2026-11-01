@@ -2312,3 +2312,5 @@
 
 * [2026-11-01 16:25:59] format applied to inline comments (Ref: 78b5bf6b-7)
 
+* [2026-11-01 16:26:00] clean applied to inline comments (Ref: 78b5bf6b-8)
+
