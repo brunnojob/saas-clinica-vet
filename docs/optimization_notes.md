@@ -2810,3 +2810,5 @@
 
 * [2026-11-01 16:36:46] format applied to type hints (Ref: 5b709802-6)
 
+* [2026-11-01 16:36:46] clean applied to module structure (Ref: 5b709802-7)
+
