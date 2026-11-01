@@ -1398,3 +1398,5 @@
 
 * [2026-11-01 16:19:26] clean applied to module structure (Ref: ffbdf564-50)
 
+* [2026-11-01 16:19:41] update applied to inline comments (Ref: b3539eda-1)
+
