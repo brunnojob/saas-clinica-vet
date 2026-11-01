@@ -3074,3 +3074,5 @@
 
 * [2026-11-01 17:27:21] format applied to utilities (Ref: 43b4bfab-38)
 
+* [2026-11-01 17:27:21] clean applied to inline comments (Ref: 43b4bfab-39)
+
