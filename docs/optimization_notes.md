@@ -3262,3 +3262,5 @@
 
 * [2026-11-01 17:28:10] update applied to type hints (Ref: f32a1ff2-32)
 
+* [2026-11-01 17:28:10] improve applied to module structure (Ref: f32a1ff2-33)
+
