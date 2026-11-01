@@ -3532,3 +3532,5 @@
 
 * [2026-11-01 17:29:41] update applied to internal configs (Ref: 1255629c-17)
 
+* [2026-11-01 17:29:41] improve applied to module structure (Ref: 1255629c-18)
+
