@@ -1204,3 +1204,5 @@
 
 * [2026-11-01 16:18:54] update applied to module structure (Ref: 51645eeb-3)
 
+* [2026-11-01 16:18:54] clean applied to internal configs (Ref: 51645eeb-4)
+
