@@ -2032,3 +2032,5 @@
 
 * [2026-11-01 16:24:32] clean applied to utilities (Ref: e422adc3-17)
 
+* [2026-11-01 16:24:32] clean applied to type hints (Ref: e422adc3-18)
+
