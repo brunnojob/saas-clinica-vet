@@ -1580,3 +1580,5 @@
 
 * [2026-11-01 16:20:19] update applied to utilities (Ref: 26317617-41)
 
+* [2026-11-01 16:20:19] format applied to module structure (Ref: 26317617-42)
+
