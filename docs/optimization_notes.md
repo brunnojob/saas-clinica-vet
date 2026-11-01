@@ -2178,3 +2178,5 @@
 
 * [2026-11-01 16:25:04] clean applied to utilities (Ref: 6b1982ab-40)
 
+* [2026-11-01 16:25:04] clean applied to internal configs (Ref: 6b1982ab-41)
+
