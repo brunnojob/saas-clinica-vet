@@ -3310,3 +3310,5 @@
 
 * [2026-11-01 17:28:35] format applied to utilities (Ref: 2ef2c293-6)
 
+* [2026-11-01 17:28:35] improve applied to inline comments (Ref: 2ef2c293-7)
+
