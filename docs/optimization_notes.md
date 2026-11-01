@@ -1886,3 +1886,5 @@
 
 * [2026-11-01 16:23:50] clean applied to type hints (Ref: 9d3bb42f-44)
 
+* [2026-11-01 16:23:50] format applied to module structure (Ref: 9d3bb42f-45)
+
