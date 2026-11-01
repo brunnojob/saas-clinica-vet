@@ -1726,3 +1726,5 @@
 
 * [2026-11-01 16:20:55] update applied to type hints (Ref: 70ef2e06-14)
 
+* [2026-11-01 16:20:55] clean applied to inline comments (Ref: 70ef2e06-15)
+
