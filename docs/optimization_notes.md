@@ -1342,3 +1342,5 @@
 
 * [2026-11-01 16:19:20] format applied to type hints (Ref: ffbdf564-22)
 
+* [2026-11-01 16:19:20] clean applied to utilities (Ref: ffbdf564-23)
+
