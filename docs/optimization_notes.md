@@ -1796,3 +1796,5 @@
 
 * [2026-11-01 16:21:06] clean applied to utilities (Ref: 70ef2e06-49)
 
+* [2026-11-01 16:21:06] improve applied to module structure (Ref: 70ef2e06-50)
+
