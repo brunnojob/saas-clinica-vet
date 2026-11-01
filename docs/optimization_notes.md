@@ -1402,3 +1402,5 @@
 
 * [2026-11-01 16:19:41] optimize applied to internal configs (Ref: b3539eda-2)
 
+* [2026-11-01 16:19:42] improve applied to type hints (Ref: b3539eda-3)
+
