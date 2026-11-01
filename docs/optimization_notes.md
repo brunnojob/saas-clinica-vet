@@ -2582,3 +2582,5 @@
 
 * [2026-11-01 16:35:36] optimize applied to module structure (Ref: 1976efcc-42)
 
+* [2026-11-01 16:35:36] update applied to internal configs (Ref: 1976efcc-43)
+
