@@ -3470,3 +3470,5 @@
 
 * [2026-11-01 17:29:19] improve applied to inline comments (Ref: 99d6d9ea-36)
 
+* [2026-11-01 17:29:20] optimize applied to internal configs (Ref: 99d6d9ea-37)
+
