@@ -1260,3 +1260,5 @@
 
 * [2026-11-01 16:18:58] clean applied to type hints (Ref: 51645eeb-31)
 
+* [2026-11-01 16:18:58] update applied to internal configs (Ref: 51645eeb-32)
+
