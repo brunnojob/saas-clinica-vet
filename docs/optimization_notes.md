@@ -2230,3 +2230,5 @@
 
 * [2026-11-01 16:25:34] update applied to inline comments (Ref: 44eda917-16)
 
+* [2026-11-01 16:25:34] improve applied to type hints (Ref: 44eda917-17)
+
