@@ -2516,3 +2516,5 @@
 
 * [2026-11-01 16:35:30] update applied to type hints (Ref: 1976efcc-9)
 
+* [2026-11-01 16:35:30] update applied to internal configs (Ref: 1976efcc-10)
+
