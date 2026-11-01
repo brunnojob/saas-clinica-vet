@@ -2982,3 +2982,5 @@
 
 * [2026-11-01 16:37:17] format applied to type hints (Ref: 08867f6c-42)
 
+* [2026-11-01 16:37:17] clean applied to inline comments (Ref: 08867f6c-43)
+
