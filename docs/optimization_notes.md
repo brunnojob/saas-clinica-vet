@@ -1480,3 +1480,5 @@
 
 * [2026-11-01 16:19:54] clean applied to module structure (Ref: b3539eda-41)
 
+* [2026-11-01 16:19:54] format applied to utilities (Ref: b3539eda-42)
+
