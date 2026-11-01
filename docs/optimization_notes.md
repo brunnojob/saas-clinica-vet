@@ -1378,3 +1378,5 @@
 
 * [2026-11-01 16:19:23] optimize applied to utilities (Ref: ffbdf564-40)
 
+* [2026-11-01 16:19:24] format applied to inline comments (Ref: ffbdf564-41)
+
