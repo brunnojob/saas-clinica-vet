@@ -2650,3 +2650,5 @@
 
 * [2026-11-01 16:36:01] clean applied to internal configs (Ref: f9d48065-26)
 
+* [2026-11-01 16:36:01] update applied to inline comments (Ref: f9d48065-27)
+
