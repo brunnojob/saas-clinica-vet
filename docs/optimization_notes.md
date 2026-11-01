@@ -2546,3 +2546,5 @@
 
 * [2026-11-01 16:35:33] format applied to module structure (Ref: 1976efcc-24)
 
+* [2026-11-01 16:35:33] clean applied to type hints (Ref: 1976efcc-25)
+
