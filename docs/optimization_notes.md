@@ -1870,3 +1870,5 @@
 
 * [2026-11-01 16:23:48] improve applied to internal configs (Ref: 9d3bb42f-36)
 
+* [2026-11-01 16:23:48] update applied to utilities (Ref: 9d3bb42f-37)
+
