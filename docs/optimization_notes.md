@@ -2840,3 +2840,5 @@
 
 * [2026-11-01 16:36:48] improve applied to internal configs (Ref: 5b709802-21)
 
+* [2026-11-01 16:36:48] format applied to type hints (Ref: 5b709802-22)
+
