@@ -2528,3 +2528,5 @@
 
 * [2026-11-01 16:35:31] format applied to inline comments (Ref: 1976efcc-15)
 
+* [2026-11-01 16:35:31] improve applied to internal configs (Ref: 1976efcc-16)
+
