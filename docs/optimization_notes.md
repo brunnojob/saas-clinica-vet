@@ -2160,3 +2160,5 @@
 
 * [2026-11-01 16:25:02] format applied to internal configs (Ref: 6b1982ab-31)
 
+* [2026-11-01 16:25:02] clean applied to inline comments (Ref: 6b1982ab-32)
+
