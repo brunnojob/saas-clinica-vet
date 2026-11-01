@@ -1354,3 +1354,5 @@
 
 * [2026-11-01 16:19:21] clean applied to type hints (Ref: ffbdf564-28)
 
+* [2026-11-01 16:19:21] clean applied to utilities (Ref: ffbdf564-29)
+
