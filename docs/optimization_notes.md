@@ -3288,3 +3288,5 @@
 
 * [2026-11-01 17:28:12] update applied to internal configs (Ref: f32a1ff2-45)
 
+* [2026-11-01 17:28:12] improve applied to type hints (Ref: f32a1ff2-46)
+
