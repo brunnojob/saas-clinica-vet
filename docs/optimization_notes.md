@@ -1322,3 +1322,5 @@
 
 * [2026-11-01 16:19:18] clean applied to internal configs (Ref: ffbdf564-12)
 
+* [2026-11-01 16:19:18] improve applied to inline comments (Ref: ffbdf564-13)
+
