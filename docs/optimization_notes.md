@@ -2000,3 +2000,5 @@
 
 * [2026-11-01 16:24:27] format applied to module structure (Ref: e422adc3-1)
 
+* [2026-11-01 16:24:28] clean applied to internal configs (Ref: e422adc3-2)
+
