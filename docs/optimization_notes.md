@@ -2634,3 +2634,5 @@
 
 * [2026-11-01 16:35:59] format applied to type hints (Ref: f9d48065-18)
 
+* [2026-11-01 16:36:00] format applied to inline comments (Ref: f9d48065-19)
+
