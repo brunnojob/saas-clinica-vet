@@ -1632,3 +1632,5 @@
 
 * [2026-11-01 16:20:34] clean applied to inline comments (Ref: 223a07be-17)
 
+* [2026-11-01 16:20:34] format applied to utilities (Ref: 223a07be-18)
+
