@@ -3508,3 +3508,5 @@
 
 * [2026-11-01 17:29:38] clean applied to module structure (Ref: 1255629c-5)
 
+* [2026-11-01 17:29:38] format applied to utilities (Ref: 1255629c-6)
+
