@@ -2690,3 +2690,5 @@
 
 * [2026-11-01 16:36:06] clean applied to internal configs (Ref: f9d48065-46)
 
+* [2026-11-01 16:36:06] format applied to utilities (Ref: f9d48065-47)
+
