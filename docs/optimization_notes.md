@@ -2776,3 +2776,5 @@
 
 * [2026-11-01 16:36:27] format applied to internal configs (Ref: c5712205-39)
 
+* [2026-11-01 16:36:27] improve applied to internal configs (Ref: c5712205-40)
+
