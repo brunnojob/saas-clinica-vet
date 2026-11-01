@@ -3190,3 +3190,5 @@
 
 * [2026-11-01 17:27:50] improve applied to type hints (Ref: c4af56cd-46)
 
+* [2026-11-01 17:27:50] clean applied to utilities (Ref: c4af56cd-47)
+
