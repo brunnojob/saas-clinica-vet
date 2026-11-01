@@ -2580,3 +2580,5 @@
 
 * [2026-11-01 16:35:36] improve applied to type hints (Ref: 1976efcc-41)
 
+* [2026-11-01 16:35:36] optimize applied to module structure (Ref: 1976efcc-42)
+
