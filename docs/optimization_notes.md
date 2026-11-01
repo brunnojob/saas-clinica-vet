@@ -1340,3 +1340,5 @@
 
 * [2026-11-01 16:19:20] update applied to internal configs (Ref: ffbdf564-21)
 
+* [2026-11-01 16:19:20] format applied to type hints (Ref: ffbdf564-22)
+
