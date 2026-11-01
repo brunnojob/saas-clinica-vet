@@ -2700,3 +2700,5 @@
 
 * [2026-11-01 16:36:21] update applied to type hints (Ref: c5712205-1)
 
+* [2026-11-01 16:36:21] improve applied to internal configs (Ref: c5712205-2)
+
