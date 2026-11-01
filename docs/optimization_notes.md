@@ -2502,3 +2502,5 @@
 
 * [2026-11-01 16:35:28] update applied to utilities (Ref: 1976efcc-2)
 
+* [2026-11-01 16:35:28] update applied to inline comments (Ref: 1976efcc-3)
+
