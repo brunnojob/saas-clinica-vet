@@ -1684,3 +1684,5 @@
 
 * [2026-11-01 16:20:38] update applied to inline comments (Ref: 223a07be-43)
 
+* [2026-11-01 16:20:39] improve applied to inline comments (Ref: 223a07be-44)
+
