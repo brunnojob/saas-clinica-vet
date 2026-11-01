@@ -2950,3 +2950,5 @@
 
 * [2026-11-01 16:37:14] update applied to internal configs (Ref: 08867f6c-26)
 
+* [2026-11-01 16:37:14] optimize applied to internal configs (Ref: 08867f6c-27)
+
