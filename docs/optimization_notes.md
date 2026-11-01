@@ -2458,3 +2458,5 @@
 
 * [2026-11-01 16:35:10] format applied to internal configs (Ref: a75e8d3c-30)
 
+* [2026-11-01 16:35:10] improve applied to internal configs (Ref: a75e8d3c-31)
+
