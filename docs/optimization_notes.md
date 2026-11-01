@@ -2460,3 +2460,5 @@
 
 * [2026-11-01 16:35:10] improve applied to internal configs (Ref: a75e8d3c-31)
 
+* [2026-11-01 16:35:10] update applied to internal configs (Ref: a75e8d3c-32)
+
