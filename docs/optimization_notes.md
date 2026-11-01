@@ -3232,3 +3232,5 @@
 
 * [2026-11-01 17:28:07] improve applied to type hints (Ref: f32a1ff2-17)
 
+* [2026-11-01 17:28:08] update applied to utilities (Ref: f32a1ff2-18)
+
