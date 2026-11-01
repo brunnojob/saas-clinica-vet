@@ -1790,3 +1790,5 @@
 
 * [2026-11-01 16:21:05] improve applied to utilities (Ref: 70ef2e06-46)
 
+* [2026-11-01 16:21:05] update applied to internal configs (Ref: 70ef2e06-47)
+
