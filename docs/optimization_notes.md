@@ -2598,3 +2598,5 @@
 
 * [2026-11-01 16:35:38] clean applied to internal configs (Ref: 1976efcc-50)
 
+* [2026-11-01 16:35:53] clean applied to utilities (Ref: f9d48065-1)
+
