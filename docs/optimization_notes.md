@@ -1234,3 +1234,5 @@
 
 * [2026-11-01 16:18:56] optimize applied to utilities (Ref: 51645eeb-18)
 
+* [2026-11-01 16:18:56] format applied to internal configs (Ref: 51645eeb-19)
+
