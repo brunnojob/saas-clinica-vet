@@ -3588,3 +3588,5 @@
 
 * [2026-11-01 17:29:49] format applied to internal configs (Ref: 1255629c-45)
 
+* [2026-11-01 17:29:49] format applied to internal configs (Ref: 1255629c-46)
+
