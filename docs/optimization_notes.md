@@ -2040,3 +2040,5 @@
 
 * [2026-11-01 16:24:33] improve applied to inline comments (Ref: e422adc3-21)
 
+* [2026-11-01 16:24:33] clean applied to module structure (Ref: e422adc3-22)
+
