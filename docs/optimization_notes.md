@@ -2998,3 +2998,5 @@
 
 * [2026-11-01 16:37:18] optimize applied to internal configs (Ref: 08867f6c-50)
 
+* [2026-11-01 17:27:14] format applied to utilities (Ref: 43b4bfab-1)
+
