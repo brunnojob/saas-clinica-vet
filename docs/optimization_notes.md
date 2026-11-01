@@ -2054,3 +2054,5 @@
 
 * [2026-11-01 16:24:35] optimize applied to type hints (Ref: e422adc3-28)
 
+* [2026-11-01 16:24:35] optimize applied to internal configs (Ref: e422adc3-29)
+
