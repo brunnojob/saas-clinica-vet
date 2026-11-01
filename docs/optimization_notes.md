@@ -2704,3 +2704,5 @@
 
 * [2026-11-01 16:36:21] format applied to utilities (Ref: c5712205-3)
 
+* [2026-11-01 16:36:21] improve applied to module structure (Ref: c5712205-4)
+
