@@ -1250,3 +1250,5 @@
 
 * [2026-11-01 16:18:57] update applied to internal configs (Ref: 51645eeb-26)
 
+* [2026-11-01 16:18:57] update applied to type hints (Ref: 51645eeb-27)
+
