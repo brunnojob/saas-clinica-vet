@@ -3492,3 +3492,5 @@
 
 * [2026-11-01 17:29:22] clean applied to internal configs (Ref: 99d6d9ea-47)
 
+* [2026-11-01 17:29:22] update applied to utilities (Ref: 99d6d9ea-48)
+
