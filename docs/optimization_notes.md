@@ -2448,3 +2448,5 @@
 
 * [2026-11-01 16:35:09] update applied to type hints (Ref: a75e8d3c-25)
 
+* [2026-11-01 16:35:10] update applied to internal configs (Ref: a75e8d3c-26)
+
