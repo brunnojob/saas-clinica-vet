@@ -2686,3 +2686,5 @@
 
 * [2026-11-01 16:36:06] format applied to utilities (Ref: f9d48065-44)
 
+* [2026-11-01 16:36:06] update applied to module structure (Ref: f9d48065-45)
+
