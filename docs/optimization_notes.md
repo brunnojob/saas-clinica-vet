@@ -1544,3 +1544,5 @@
 
 * [2026-11-01 16:20:15] update applied to utilities (Ref: 26317617-23)
 
+* [2026-11-01 16:20:15] improve applied to utilities (Ref: 26317617-24)
+
