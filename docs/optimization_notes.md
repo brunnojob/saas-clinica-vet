@@ -2820,3 +2820,5 @@
 
 * [2026-11-01 16:36:47] clean applied to utilities (Ref: 5b709802-11)
 
+* [2026-11-01 16:36:47] improve applied to internal configs (Ref: 5b709802-12)
+
