@@ -1554,3 +1554,5 @@
 
 * [2026-11-01 16:20:16] optimize applied to type hints (Ref: 26317617-28)
 
+* [2026-11-01 16:20:17] clean applied to internal configs (Ref: 26317617-29)
+
