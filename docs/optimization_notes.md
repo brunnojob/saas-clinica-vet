@@ -3102,3 +3102,5 @@
 
 * [2026-11-01 17:27:38] clean applied to internal configs (Ref: c4af56cd-2)
 
+* [2026-11-01 17:27:38] update applied to inline comments (Ref: c4af56cd-3)
+
