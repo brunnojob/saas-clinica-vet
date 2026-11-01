@@ -1872,3 +1872,5 @@
 
 * [2026-11-01 16:23:48] update applied to utilities (Ref: 9d3bb42f-37)
 
+* [2026-11-01 16:23:48] format applied to internal configs (Ref: 9d3bb42f-38)
+
