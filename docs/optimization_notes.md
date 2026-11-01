@@ -1310,3 +1310,5 @@
 
 * [2026-11-01 16:19:16] format applied to module structure (Ref: ffbdf564-6)
 
+* [2026-11-01 16:19:16] improve applied to inline comments (Ref: ffbdf564-7)
+
