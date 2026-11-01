@@ -3222,3 +3222,5 @@
 
 * [2026-11-01 17:28:07] update applied to utilities (Ref: f32a1ff2-12)
 
+* [2026-11-01 17:28:07] improve applied to module structure (Ref: f32a1ff2-13)
+
