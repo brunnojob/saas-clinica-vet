@@ -1420,3 +1420,5 @@
 
 * [2026-11-01 16:19:44] optimize applied to inline comments (Ref: b3539eda-11)
 
+* [2026-11-01 16:19:44] improve applied to type hints (Ref: b3539eda-12)
+
