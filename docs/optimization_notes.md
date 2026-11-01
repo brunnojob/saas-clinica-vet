@@ -1982,3 +1982,5 @@
 
 * [2026-11-01 16:24:10] update applied to type hints (Ref: a0f6d977-42)
 
+* [2026-11-01 16:24:11] update applied to inline comments (Ref: a0f6d977-43)
+
