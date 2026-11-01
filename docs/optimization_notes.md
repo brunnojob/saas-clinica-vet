@@ -2134,3 +2134,5 @@
 
 * [2026-11-01 16:24:57] clean applied to internal configs (Ref: 6b1982ab-18)
 
+* [2026-11-01 16:24:57] improve applied to module structure (Ref: 6b1982ab-19)
+
