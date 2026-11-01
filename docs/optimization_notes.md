@@ -2590,3 +2590,5 @@
 
 * [2026-11-01 16:35:37] clean applied to internal configs (Ref: 1976efcc-46)
 
+* [2026-11-01 16:35:37] format applied to module structure (Ref: 1976efcc-47)
+
