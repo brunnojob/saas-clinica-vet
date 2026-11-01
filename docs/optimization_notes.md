@@ -1658,3 +1658,5 @@
 
 * [2026-11-01 16:20:37] update applied to type hints (Ref: 223a07be-30)
 
+* [2026-11-01 16:20:37] improve applied to utilities (Ref: 223a07be-31)
+
