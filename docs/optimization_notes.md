@@ -3326,3 +3326,5 @@
 
 * [2026-11-01 17:28:37] improve applied to type hints (Ref: 2ef2c293-14)
 
+* [2026-11-01 17:28:37] update applied to internal configs (Ref: 2ef2c293-15)
+
