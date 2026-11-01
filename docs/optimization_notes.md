@@ -2450,3 +2450,5 @@
 
 * [2026-11-01 16:35:10] update applied to internal configs (Ref: a75e8d3c-26)
 
+* [2026-11-01 16:35:10] update applied to module structure (Ref: a75e8d3c-27)
+
