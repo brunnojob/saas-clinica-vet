@@ -2400,3 +2400,5 @@
 
 * [2026-11-01 16:35:02] format applied to internal configs (Ref: a75e8d3c-1)
 
+* [2026-11-01 16:35:02] format applied to module structure (Ref: a75e8d3c-2)
+
