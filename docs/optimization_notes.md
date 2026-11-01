@@ -1386,3 +1386,5 @@
 
 * [2026-11-01 16:19:24] clean applied to internal configs (Ref: ffbdf564-44)
 
+* [2026-11-01 16:19:24] improve applied to internal configs (Ref: ffbdf564-45)
+
