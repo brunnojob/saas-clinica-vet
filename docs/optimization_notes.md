@@ -1738,3 +1738,5 @@
 
 * [2026-11-01 16:20:56] optimize applied to utilities (Ref: 70ef2e06-20)
 
+* [2026-11-01 16:20:56] optimize applied to module structure (Ref: 70ef2e06-21)
+
