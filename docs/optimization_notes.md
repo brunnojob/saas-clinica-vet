@@ -2224,3 +2224,5 @@
 
 * [2026-11-01 16:25:33] update applied to module structure (Ref: 44eda917-13)
 
+* [2026-11-01 16:25:33] format applied to utilities (Ref: 44eda917-14)
+
