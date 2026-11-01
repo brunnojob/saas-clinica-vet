@@ -1592,3 +1592,5 @@
 
 * [2026-11-01 16:20:20] format applied to utilities (Ref: 26317617-47)
 
+* [2026-11-01 16:20:20] clean applied to utilities (Ref: 26317617-48)
+
