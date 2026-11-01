@@ -1360,3 +1360,5 @@
 
 * [2026-11-01 16:19:21] clean applied to utilities (Ref: ffbdf564-31)
 
+* [2026-11-01 16:19:21] clean applied to internal configs (Ref: ffbdf564-32)
+
