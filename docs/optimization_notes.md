@@ -1564,3 +1564,5 @@
 
 * [2026-11-01 16:20:17] format applied to internal configs (Ref: 26317617-33)
 
+* [2026-11-01 16:20:18] clean applied to type hints (Ref: 26317617-34)
+
