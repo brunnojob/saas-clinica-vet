@@ -3264,3 +3264,5 @@
 
 * [2026-11-01 17:28:10] improve applied to module structure (Ref: f32a1ff2-33)
 
+* [2026-11-01 17:28:10] clean applied to internal configs (Ref: f32a1ff2-34)
+
