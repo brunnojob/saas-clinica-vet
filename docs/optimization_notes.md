@@ -1382,3 +1382,5 @@
 
 * [2026-11-01 16:19:24] clean applied to module structure (Ref: ffbdf564-42)
 
+* [2026-11-01 16:19:24] clean applied to type hints (Ref: ffbdf564-43)
+
