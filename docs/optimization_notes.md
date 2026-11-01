@@ -3406,3 +3406,5 @@
 
 * [2026-11-01 17:29:06] optimize applied to internal configs (Ref: 99d6d9ea-4)
 
+* [2026-11-01 17:29:06] format applied to internal configs (Ref: 99d6d9ea-5)
+
