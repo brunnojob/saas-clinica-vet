@@ -1356,3 +1356,5 @@
 
 * [2026-11-01 16:19:21] clean applied to utilities (Ref: ffbdf564-29)
 
+* [2026-11-01 16:19:21] clean applied to module structure (Ref: ffbdf564-30)
+
