@@ -2260,3 +2260,5 @@
 
 * [2026-11-01 16:25:39] improve applied to module structure (Ref: 44eda917-31)
 
+* [2026-11-01 16:25:39] format applied to internal configs (Ref: 44eda917-32)
+
