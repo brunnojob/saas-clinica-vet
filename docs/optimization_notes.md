@@ -2754,3 +2754,5 @@
 
 * [2026-11-01 16:36:26] update applied to utilities (Ref: c5712205-28)
 
+* [2026-11-01 16:36:26] improve applied to internal configs (Ref: c5712205-29)
+
