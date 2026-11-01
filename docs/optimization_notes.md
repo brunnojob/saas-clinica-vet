@@ -1212,3 +1212,5 @@
 
 * [2026-11-01 16:18:55] format applied to module structure (Ref: 51645eeb-7)
 
+* [2026-11-01 16:18:55] format applied to utilities (Ref: 51645eeb-8)
+
