@@ -2202,3 +2202,5 @@
 
 * [2026-11-01 16:25:25] format applied to type hints (Ref: 44eda917-2)
 
+* [2026-11-01 16:25:26] improve applied to inline comments (Ref: 44eda917-3)
+
