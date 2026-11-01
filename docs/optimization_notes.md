@@ -1460,3 +1460,5 @@
 
 * [2026-11-01 16:19:49] optimize applied to utilities (Ref: b3539eda-31)
 
+* [2026-11-01 16:19:49] optimize applied to internal configs (Ref: b3539eda-32)
+
