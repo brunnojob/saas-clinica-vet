@@ -2560,3 +2560,5 @@
 
 * [2026-11-01 16:35:35] update applied to utilities (Ref: 1976efcc-31)
 
+* [2026-11-01 16:35:35] improve applied to internal configs (Ref: 1976efcc-32)
+
