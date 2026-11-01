@@ -2082,3 +2082,5 @@
 
 * [2026-11-01 16:24:37] format applied to internal configs (Ref: e422adc3-42)
 
+* [2026-11-01 16:24:38] format applied to type hints (Ref: e422adc3-43)
+
