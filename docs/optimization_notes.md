@@ -1246,3 +1246,5 @@
 
 * [2026-11-01 16:18:57] update applied to internal configs (Ref: 51645eeb-24)
 
+* [2026-11-01 16:18:57] format applied to module structure (Ref: 51645eeb-25)
+
