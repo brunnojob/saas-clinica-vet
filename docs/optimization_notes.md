@@ -2434,3 +2434,5 @@
 
 * [2026-11-01 16:35:08] format applied to module structure (Ref: a75e8d3c-18)
 
+* [2026-11-01 16:35:08] clean applied to internal configs (Ref: a75e8d3c-19)
+
