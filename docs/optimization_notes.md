@@ -2662,3 +2662,5 @@
 
 * [2026-11-01 16:36:02] format applied to utilities (Ref: f9d48065-32)
 
+* [2026-11-01 16:36:03] clean applied to module structure (Ref: f9d48065-33)
+
