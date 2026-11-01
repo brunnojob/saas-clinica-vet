@@ -2702,3 +2702,5 @@
 
 * [2026-11-01 16:36:21] improve applied to internal configs (Ref: c5712205-2)
 
+* [2026-11-01 16:36:21] format applied to utilities (Ref: c5712205-3)
+
