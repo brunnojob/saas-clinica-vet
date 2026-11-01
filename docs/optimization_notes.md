@@ -2726,3 +2726,5 @@
 
 * [2026-11-01 16:36:22] improve applied to internal configs (Ref: c5712205-14)
 
+* [2026-11-01 16:36:22] clean applied to internal configs (Ref: c5712205-15)
+
