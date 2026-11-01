@@ -1470,3 +1470,5 @@
 
 * [2026-11-01 16:19:52] improve applied to internal configs (Ref: b3539eda-36)
 
+* [2026-11-01 16:19:53] update applied to internal configs (Ref: b3539eda-37)
+
