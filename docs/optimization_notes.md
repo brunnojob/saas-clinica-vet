@@ -3066,3 +3066,5 @@
 
 * [2026-11-01 17:27:21] clean applied to type hints (Ref: 43b4bfab-34)
 
+* [2026-11-01 17:27:21] format applied to type hints (Ref: 43b4bfab-35)
+
