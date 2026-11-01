@@ -2526,3 +2526,5 @@
 
 * [2026-11-01 16:35:31] format applied to utilities (Ref: 1976efcc-14)
 
+* [2026-11-01 16:35:31] format applied to inline comments (Ref: 1976efcc-15)
+
