@@ -1368,3 +1368,5 @@
 
 * [2026-11-01 16:19:22] update applied to inline comments (Ref: ffbdf564-35)
 
+* [2026-11-01 16:19:22] improve applied to module structure (Ref: ffbdf564-36)
+
