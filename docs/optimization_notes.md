@@ -1548,3 +1548,5 @@
 
 * [2026-11-01 16:20:16] update applied to type hints (Ref: 26317617-25)
 
+* [2026-11-01 16:20:16] clean applied to module structure (Ref: 26317617-26)
+
