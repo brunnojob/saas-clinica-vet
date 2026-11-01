@@ -2684,3 +2684,5 @@
 
 * [2026-11-01 16:36:05] optimize applied to module structure (Ref: f9d48065-43)
 
+* [2026-11-01 16:36:06] format applied to utilities (Ref: f9d48065-44)
+
