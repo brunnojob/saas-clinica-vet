@@ -2578,3 +2578,5 @@
 
 * [2026-11-01 16:35:36] format applied to utilities (Ref: 1976efcc-40)
 
+* [2026-11-01 16:35:36] improve applied to type hints (Ref: 1976efcc-41)
+
