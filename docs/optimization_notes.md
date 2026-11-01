@@ -2766,3 +2766,5 @@
 
 * [2026-11-01 16:36:27] optimize applied to inline comments (Ref: c5712205-34)
 
+* [2026-11-01 16:36:27] format applied to inline comments (Ref: c5712205-35)
+
