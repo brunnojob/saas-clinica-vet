@@ -3314,3 +3314,5 @@
 
 * [2026-11-01 17:28:35] optimize applied to inline comments (Ref: 2ef2c293-8)
 
+* [2026-11-01 17:28:35] format applied to utilities (Ref: 2ef2c293-9)
+
