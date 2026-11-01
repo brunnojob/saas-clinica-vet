@@ -1422,3 +1422,5 @@
 
 * [2026-11-01 16:19:44] improve applied to type hints (Ref: b3539eda-12)
 
+* [2026-11-01 16:19:44] update applied to utilities (Ref: b3539eda-13)
+
