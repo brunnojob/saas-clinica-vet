@@ -2970,3 +2970,5 @@
 
 * [2026-11-01 16:37:16] improve applied to module structure (Ref: 08867f6c-36)
 
+* [2026-11-01 16:37:16] improve applied to utilities (Ref: 08867f6c-37)
+
