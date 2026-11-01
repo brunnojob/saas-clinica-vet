@@ -2656,3 +2656,5 @@
 
 * [2026-11-01 16:36:02] clean applied to utilities (Ref: f9d48065-29)
 
+* [2026-11-01 16:36:02] format applied to utilities (Ref: f9d48065-30)
+
