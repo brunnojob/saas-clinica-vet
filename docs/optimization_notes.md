@@ -2132,3 +2132,5 @@
 
 * [2026-11-01 16:24:56] update applied to type hints (Ref: 6b1982ab-17)
 
+* [2026-11-01 16:24:57] clean applied to internal configs (Ref: 6b1982ab-18)
+
