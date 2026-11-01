@@ -3130,3 +3130,5 @@
 
 * [2026-11-01 17:27:41] clean applied to internal configs (Ref: c4af56cd-16)
 
+* [2026-11-01 17:27:41] improve applied to utilities (Ref: c4af56cd-17)
+
