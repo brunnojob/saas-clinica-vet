@@ -1230,3 +1230,5 @@
 
 * [2026-11-01 16:18:56] update applied to utilities (Ref: 51645eeb-16)
 
+* [2026-11-01 16:18:56] format applied to utilities (Ref: 51645eeb-17)
+
