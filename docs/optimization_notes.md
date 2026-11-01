@@ -3332,3 +3332,5 @@
 
 * [2026-11-01 17:28:37] improve applied to module structure (Ref: 2ef2c293-17)
 
+* [2026-11-01 17:28:38] clean applied to utilities (Ref: 2ef2c293-18)
+
