@@ -1954,3 +1954,5 @@
 
 * [2026-11-01 16:24:08] optimize applied to type hints (Ref: a0f6d977-28)
 
+* [2026-11-01 16:24:08] update applied to internal configs (Ref: a0f6d977-29)
+
