@@ -2600,3 +2600,5 @@
 
 * [2026-11-01 16:35:53] clean applied to utilities (Ref: f9d48065-1)
 
+* [2026-11-01 16:35:53] clean applied to module structure (Ref: f9d48065-2)
+
