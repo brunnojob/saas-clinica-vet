@@ -1754,3 +1754,5 @@
 
 * [2026-11-01 16:21:01] clean applied to internal configs (Ref: 70ef2e06-28)
 
+* [2026-11-01 16:21:01] format applied to type hints (Ref: 70ef2e06-29)
+
