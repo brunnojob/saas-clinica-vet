@@ -2482,3 +2482,5 @@
 
 * [2026-11-01 16:35:12] optimize applied to inline comments (Ref: a75e8d3c-42)
 
+* [2026-11-01 16:35:12] clean applied to module structure (Ref: a75e8d3c-43)
+
