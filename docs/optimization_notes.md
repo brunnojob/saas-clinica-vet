@@ -1984,3 +1984,5 @@
 
 * [2026-11-01 16:24:11] update applied to inline comments (Ref: a0f6d977-43)
 
+* [2026-11-01 16:24:11] improve applied to internal configs (Ref: a0f6d977-44)
+
