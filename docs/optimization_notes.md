@@ -3192,3 +3192,5 @@
 
 * [2026-11-01 17:27:50] clean applied to utilities (Ref: c4af56cd-47)
 
+* [2026-11-01 17:27:50] update applied to module structure (Ref: c4af56cd-48)
+
