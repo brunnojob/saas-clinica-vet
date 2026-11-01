@@ -3408,3 +3408,5 @@
 
 * [2026-11-01 17:29:06] format applied to internal configs (Ref: 99d6d9ea-5)
 
+* [2026-11-01 17:29:07] format applied to type hints (Ref: 99d6d9ea-6)
+
