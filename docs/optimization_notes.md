@@ -1750,3 +1750,5 @@
 
 * [2026-11-01 16:20:59] optimize applied to internal configs (Ref: 70ef2e06-26)
 
+* [2026-11-01 16:21:00] format applied to inline comments (Ref: 70ef2e06-27)
+
