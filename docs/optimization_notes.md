@@ -2168,3 +2168,5 @@
 
 * [2026-11-01 16:25:03] update applied to utilities (Ref: 6b1982ab-35)
 
+* [2026-11-01 16:25:03] update applied to inline comments (Ref: 6b1982ab-36)
+
