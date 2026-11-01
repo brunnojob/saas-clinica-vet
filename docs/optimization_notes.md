@@ -2292,3 +2292,5 @@
 
 * [2026-11-01 16:25:42] update applied to internal configs (Ref: 44eda917-47)
 
+* [2026-11-01 16:25:43] update applied to module structure (Ref: 44eda917-48)
+
