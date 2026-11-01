@@ -2860,3 +2860,5 @@
 
 * [2026-11-01 16:36:50] update applied to utilities (Ref: 5b709802-31)
 
+* [2026-11-01 16:36:51] optimize applied to internal configs (Ref: 5b709802-32)
+
