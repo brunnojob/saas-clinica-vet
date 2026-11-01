@@ -2520,3 +2520,5 @@
 
 * [2026-11-01 16:35:30] format applied to type hints (Ref: 1976efcc-11)
 
+* [2026-11-01 16:35:30] improve applied to internal configs (Ref: 1976efcc-12)
+
