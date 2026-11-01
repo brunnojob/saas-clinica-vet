@@ -1476,3 +1476,5 @@
 
 * [2026-11-01 16:19:53] clean applied to internal configs (Ref: b3539eda-39)
 
+* [2026-11-01 16:19:53] improve applied to internal configs (Ref: b3539eda-40)
+
