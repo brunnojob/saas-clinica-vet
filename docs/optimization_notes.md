@@ -1716,3 +1716,5 @@
 
 * [2026-11-01 16:20:53] improve applied to utilities (Ref: 70ef2e06-9)
 
+* [2026-11-01 16:20:54] improve applied to module structure (Ref: 70ef2e06-10)
+
