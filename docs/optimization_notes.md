@@ -1438,3 +1438,5 @@
 
 * [2026-11-01 16:19:46] improve applied to inline comments (Ref: b3539eda-20)
 
+* [2026-11-01 16:19:46] format applied to inline comments (Ref: b3539eda-21)
+
