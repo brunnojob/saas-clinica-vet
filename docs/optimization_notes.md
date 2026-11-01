@@ -1236,3 +1236,5 @@
 
 * [2026-11-01 16:18:56] format applied to internal configs (Ref: 51645eeb-19)
 
+* [2026-11-01 16:18:56] clean applied to module structure (Ref: 51645eeb-20)
+
