@@ -2772,3 +2772,5 @@
 
 * [2026-11-01 16:36:27] optimize applied to internal configs (Ref: c5712205-37)
 
+* [2026-11-01 16:36:27] update applied to utilities (Ref: c5712205-38)
+
