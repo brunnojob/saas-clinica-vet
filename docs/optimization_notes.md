@@ -2322,3 +2322,5 @@
 
 * [2026-11-01 16:26:00] format applied to internal configs (Ref: 78b5bf6b-12)
 
+* [2026-11-01 16:26:00] improve applied to type hints (Ref: 78b5bf6b-13)
+
