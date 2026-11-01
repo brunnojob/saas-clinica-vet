@@ -3506,3 +3506,5 @@
 
 * [2026-11-01 17:29:38] improve applied to utilities (Ref: 1255629c-4)
 
+* [2026-11-01 17:29:38] clean applied to module structure (Ref: 1255629c-5)
+
