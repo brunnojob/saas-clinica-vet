@@ -2382,3 +2382,5 @@
 
 * [2026-11-01 16:26:07] format applied to utilities (Ref: 78b5bf6b-42)
 
+* [2026-11-01 16:26:08] format applied to internal configs (Ref: 78b5bf6b-43)
+
