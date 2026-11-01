@@ -2044,3 +2044,5 @@
 
 * [2026-11-01 16:24:33] clean applied to utilities (Ref: e422adc3-23)
 
+* [2026-11-01 16:24:34] improve applied to inline comments (Ref: e422adc3-24)
+
