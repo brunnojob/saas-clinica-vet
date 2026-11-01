@@ -1502,3 +1502,5 @@
 
 * [2026-11-01 16:20:09] format applied to module structure (Ref: 26317617-2)
 
+* [2026-11-01 16:20:09] optimize applied to internal configs (Ref: 26317617-3)
+
