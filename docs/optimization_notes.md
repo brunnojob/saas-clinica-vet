@@ -1598,3 +1598,5 @@
 
 * [2026-11-01 16:20:20] improve applied to utilities (Ref: 26317617-50)
 
+* [2026-11-01 16:20:31] update applied to module structure (Ref: 223a07be-1)
+
