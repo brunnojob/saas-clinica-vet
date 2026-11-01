@@ -3550,3 +3550,5 @@
 
 * [2026-11-01 17:29:46] update applied to type hints (Ref: 1255629c-26)
 
+* [2026-11-01 17:29:46] improve applied to type hints (Ref: 1255629c-27)
+
