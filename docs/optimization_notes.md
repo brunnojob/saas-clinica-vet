@@ -1454,3 +1454,5 @@
 
 * [2026-11-01 16:19:48] format applied to inline comments (Ref: b3539eda-28)
 
+* [2026-11-01 16:19:49] format applied to type hints (Ref: b3539eda-29)
+
