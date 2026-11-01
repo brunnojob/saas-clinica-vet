@@ -2812,3 +2812,5 @@
 
 * [2026-11-01 16:36:46] clean applied to module structure (Ref: 5b709802-7)
 
+* [2026-11-01 16:36:46] clean applied to internal configs (Ref: 5b709802-8)
+
