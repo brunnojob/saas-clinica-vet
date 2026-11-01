@@ -3298,3 +3298,5 @@
 
 * [2026-11-01 17:28:13] update applied to utilities (Ref: f32a1ff2-50)
 
+* [2026-11-01 17:28:34] improve applied to utilities (Ref: 2ef2c293-1)
+
