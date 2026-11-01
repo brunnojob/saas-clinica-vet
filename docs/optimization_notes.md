@@ -1346,3 +1346,5 @@
 
 * [2026-11-01 16:19:20] update applied to utilities (Ref: ffbdf564-24)
 
+* [2026-11-01 16:19:20] improve applied to utilities (Ref: ffbdf564-25)
+
