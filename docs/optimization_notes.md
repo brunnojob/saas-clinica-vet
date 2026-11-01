@@ -2372,3 +2372,5 @@
 
 * [2026-11-01 16:26:06] update applied to internal configs (Ref: 78b5bf6b-37)
 
+* [2026-11-01 16:26:06] update applied to module structure (Ref: 78b5bf6b-38)
+
