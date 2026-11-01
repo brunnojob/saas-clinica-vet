@@ -2264,3 +2264,5 @@
 
 * [2026-11-01 16:25:39] improve applied to utilities (Ref: 44eda917-33)
 
+* [2026-11-01 16:25:39] format applied to module structure (Ref: 44eda917-34)
+
