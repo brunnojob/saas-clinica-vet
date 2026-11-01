@@ -2740,3 +2740,5 @@
 
 * [2026-11-01 16:36:23] update applied to type hints (Ref: c5712205-21)
 
+* [2026-11-01 16:36:23] format applied to module structure (Ref: c5712205-22)
+
