@@ -2826,3 +2826,5 @@
 
 * [2026-11-01 16:36:47] clean applied to utilities (Ref: 5b709802-14)
 
+* [2026-11-01 16:36:47] clean applied to type hints (Ref: 5b709802-15)
+
