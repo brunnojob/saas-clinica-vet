@@ -1500,3 +1500,5 @@
 
 * [2026-11-01 16:20:09] format applied to utilities (Ref: 26317617-1)
 
+* [2026-11-01 16:20:09] format applied to module structure (Ref: 26317617-2)
+
