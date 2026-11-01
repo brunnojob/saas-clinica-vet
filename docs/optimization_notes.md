@@ -3354,3 +3354,5 @@
 
 * [2026-11-01 17:28:42] improve applied to internal configs (Ref: 2ef2c293-28)
 
+* [2026-11-01 17:28:42] improve applied to utilities (Ref: 2ef2c293-29)
+
