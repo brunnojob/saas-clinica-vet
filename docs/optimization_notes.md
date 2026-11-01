@@ -1614,3 +1614,5 @@
 
 * [2026-11-01 16:20:32] improve applied to module structure (Ref: 223a07be-8)
 
+* [2026-11-01 16:20:32] update applied to internal configs (Ref: 223a07be-9)
+
