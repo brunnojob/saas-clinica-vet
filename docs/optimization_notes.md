@@ -2976,3 +2976,5 @@
 
 * [2026-11-01 16:37:16] update applied to module structure (Ref: 08867f6c-39)
 
+* [2026-11-01 16:37:16] improve applied to type hints (Ref: 08867f6c-40)
+
