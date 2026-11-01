@@ -2934,3 +2934,5 @@
 
 * [2026-11-01 16:37:13] improve applied to type hints (Ref: 08867f6c-18)
 
+* [2026-11-01 16:37:13] format applied to type hints (Ref: 08867f6c-19)
+
