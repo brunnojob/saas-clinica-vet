@@ -2430,3 +2430,5 @@
 
 * [2026-11-01 16:35:08] optimize applied to internal configs (Ref: a75e8d3c-16)
 
+* [2026-11-01 16:35:08] optimize applied to type hints (Ref: a75e8d3c-17)
+
