@@ -1706,3 +1706,5 @@
 
 * [2026-11-01 16:20:52] format applied to internal configs (Ref: 70ef2e06-4)
 
+* [2026-11-01 16:20:52] format applied to type hints (Ref: 70ef2e06-5)
+
