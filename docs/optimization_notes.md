@@ -3950,3 +3950,5 @@
 
 * [2026-11-02 00:51:26] improve applied to utilities (Ref: 862ae093-26)
 
+* [2026-11-02 00:51:26] format applied to inline comments (Ref: 862ae093-27)
+
