@@ -3866,3 +3866,5 @@
 
 * [2026-11-02 00:50:54] format applied to type hints (Ref: 3d8aac45-34)
 
+* [2026-11-02 00:50:54] format applied to internal configs (Ref: 3d8aac45-35)
+
