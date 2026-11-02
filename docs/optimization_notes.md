@@ -3850,3 +3850,5 @@
 
 * [2026-11-02 00:50:53] improve applied to internal configs (Ref: 3d8aac45-26)
 
+* [2026-11-02 00:50:53] update applied to type hints (Ref: 3d8aac45-27)
+
