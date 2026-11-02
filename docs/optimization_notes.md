@@ -4260,3 +4260,5 @@
 
 * [2026-11-02 00:53:38] format applied to inline comments (Ref: 4ad4a326-31)
 
+* [2026-11-02 00:53:38] format applied to internal configs (Ref: 4ad4a326-32)
+
