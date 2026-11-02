@@ -3656,3 +3656,5 @@
 
 * [2026-11-02 00:48:15] improve applied to inline comments (Ref: 85dc3849-29)
 
+* [2026-11-02 00:48:15] update applied to module structure (Ref: 85dc3849-30)
+
