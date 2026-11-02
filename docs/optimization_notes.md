@@ -3598,3 +3598,5 @@
 
 * [2026-11-01 17:29:50] update applied to type hints (Ref: 1255629c-50)
 
+* [2026-11-02 00:48:10] format applied to internal configs (Ref: 85dc3849-1)
+
