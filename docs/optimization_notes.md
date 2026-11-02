@@ -3870,3 +3870,5 @@
 
 * [2026-11-02 00:50:54] improve applied to inline comments (Ref: 3d8aac45-36)
 
+* [2026-11-02 00:50:55] update applied to internal configs (Ref: 3d8aac45-37)
+
