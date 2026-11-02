@@ -4280,3 +4280,5 @@
 
 * [2026-11-02 00:53:52] improve applied to utilities (Ref: 4ad4a326-41)
 
+* [2026-11-02 00:53:52] update applied to module structure (Ref: 4ad4a326-42)
+
