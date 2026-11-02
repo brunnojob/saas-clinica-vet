@@ -4136,3 +4136,5 @@
 
 * [2026-11-02 00:52:58] update applied to type hints (Ref: 02ebce16-19)
 
+* [2026-11-02 00:52:58] format applied to internal configs (Ref: 02ebce16-20)
+
