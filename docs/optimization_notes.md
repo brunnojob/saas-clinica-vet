@@ -3752,3 +3752,5 @@
 
 * [2026-11-02 00:50:24] improve applied to utilities (Ref: ffde0be3-27)
 
+* [2026-11-02 00:50:25] improve applied to inline comments (Ref: ffde0be3-28)
+
