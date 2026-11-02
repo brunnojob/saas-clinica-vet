@@ -4012,3 +4012,5 @@
 
 * [2026-11-02 00:52:07] improve applied to internal configs (Ref: 3b9167a0-7)
 
+* [2026-11-02 00:52:07] format applied to internal configs (Ref: 3b9167a0-8)
+
