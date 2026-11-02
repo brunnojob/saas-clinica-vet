@@ -3984,3 +3984,5 @@
 
 * [2026-11-02 00:51:36] update applied to utilities (Ref: 862ae093-43)
 
+* [2026-11-02 00:51:42] improve applied to internal configs (Ref: 862ae093-44)
+
