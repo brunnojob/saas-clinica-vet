@@ -3724,3 +3724,5 @@
 
 * [2026-11-02 00:50:20] improve applied to internal configs (Ref: ffde0be3-13)
 
+* [2026-11-02 00:50:23] format applied to internal configs (Ref: ffde0be3-14)
+
