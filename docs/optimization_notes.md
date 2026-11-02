@@ -4152,3 +4152,5 @@
 
 * [2026-11-02 00:53:01] clean applied to utilities (Ref: 02ebce16-27)
 
+* [2026-11-02 00:53:01] improve applied to inline comments (Ref: 02ebce16-28)
+
