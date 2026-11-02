@@ -4208,3 +4208,5 @@
 
 * [2026-11-02 00:53:27] clean applied to module structure (Ref: 4ad4a326-5)
 
+* [2026-11-02 00:53:27] improve applied to internal configs (Ref: 4ad4a326-6)
+
