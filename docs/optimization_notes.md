@@ -3986,3 +3986,5 @@
 
 * [2026-11-02 00:51:42] improve applied to internal configs (Ref: 862ae093-44)
 
+* [2026-11-02 00:51:42] clean applied to module structure (Ref: 862ae093-45)
+
