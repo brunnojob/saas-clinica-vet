@@ -4174,3 +4174,5 @@
 
 * [2026-11-02 00:53:05] format applied to utilities (Ref: 02ebce16-38)
 
+* [2026-11-02 00:53:06] improve applied to internal configs (Ref: 02ebce16-39)
+
