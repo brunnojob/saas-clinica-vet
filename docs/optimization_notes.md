@@ -3942,3 +3942,5 @@
 
 * [2026-11-02 00:51:24] format applied to module structure (Ref: 862ae093-22)
 
+* [2026-11-02 00:51:24] format applied to utilities (Ref: 862ae093-23)
+
