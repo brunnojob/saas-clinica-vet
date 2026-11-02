@@ -3608,3 +3608,5 @@
 
 * [2026-11-02 00:48:11] format applied to internal configs (Ref: 85dc3849-5)
 
+* [2026-11-02 00:48:11] improve applied to internal configs (Ref: 85dc3849-6)
+
