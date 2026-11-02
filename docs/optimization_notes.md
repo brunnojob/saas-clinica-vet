@@ -3790,3 +3790,5 @@
 
 * [2026-11-02 00:50:30] format applied to inline comments (Ref: ffde0be3-46)
 
+* [2026-11-02 00:50:30] clean applied to inline comments (Ref: ffde0be3-47)
+
