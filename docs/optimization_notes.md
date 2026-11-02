@@ -3632,3 +3632,5 @@
 
 * [2026-11-02 00:48:13] improve applied to type hints (Ref: 85dc3849-17)
 
+* [2026-11-02 00:48:13] format applied to inline comments (Ref: 85dc3849-18)
+
