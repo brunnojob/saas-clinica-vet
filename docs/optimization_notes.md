@@ -4032,3 +4032,5 @@
 
 * [2026-11-02 00:52:11] clean applied to internal configs (Ref: 3b9167a0-17)
 
+* [2026-11-02 00:52:12] clean applied to inline comments (Ref: 3b9167a0-18)
+
