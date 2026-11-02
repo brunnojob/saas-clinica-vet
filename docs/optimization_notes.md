@@ -4276,3 +4276,5 @@
 
 * [2026-11-02 00:53:47] improve applied to internal configs (Ref: 4ad4a326-39)
 
+* [2026-11-02 00:53:50] optimize applied to internal configs (Ref: 4ad4a326-40)
+
