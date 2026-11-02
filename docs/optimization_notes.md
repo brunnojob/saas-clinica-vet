@@ -3762,3 +3762,5 @@
 
 * [2026-11-02 00:50:25] clean applied to module structure (Ref: ffde0be3-32)
 
+* [2026-11-02 00:50:25] format applied to utilities (Ref: ffde0be3-33)
+
