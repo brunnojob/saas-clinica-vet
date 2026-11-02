@@ -3912,3 +3912,5 @@
 
 * [2026-11-02 00:51:17] update applied to utilities (Ref: 862ae093-7)
 
+* [2026-11-02 00:51:17] format applied to utilities (Ref: 862ae093-8)
+
