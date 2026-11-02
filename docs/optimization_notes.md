@@ -3988,3 +3988,5 @@
 
 * [2026-11-02 00:51:42] clean applied to module structure (Ref: 862ae093-45)
 
+* [2026-11-02 00:51:43] clean applied to utilities (Ref: 862ae093-46)
+
