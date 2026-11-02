@@ -4268,3 +4268,5 @@
 
 * [2026-11-02 00:53:39] update applied to internal configs (Ref: 4ad4a326-35)
 
+* [2026-11-02 00:53:40] update applied to inline comments (Ref: 4ad4a326-36)
+
