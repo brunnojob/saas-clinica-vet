@@ -3662,3 +3662,5 @@
 
 * [2026-11-02 00:48:15] format applied to type hints (Ref: 85dc3849-32)
 
+* [2026-11-02 00:48:16] format applied to inline comments (Ref: 85dc3849-33)
+
