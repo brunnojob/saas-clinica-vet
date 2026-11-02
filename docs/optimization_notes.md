@@ -3990,3 +3990,5 @@
 
 * [2026-11-02 00:51:43] clean applied to utilities (Ref: 862ae093-46)
 
+* [2026-11-02 00:51:43] format applied to module structure (Ref: 862ae093-47)
+
