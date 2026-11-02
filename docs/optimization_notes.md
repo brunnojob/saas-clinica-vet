@@ -3902,3 +3902,5 @@
 
 * [2026-11-02 00:51:15] format applied to internal configs (Ref: 862ae093-2)
 
+* [2026-11-02 00:51:16] clean applied to inline comments (Ref: 862ae093-3)
+
