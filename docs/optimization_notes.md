@@ -3674,3 +3674,5 @@
 
 * [2026-11-02 00:48:16] optimize applied to internal configs (Ref: 85dc3849-38)
 
+* [2026-11-02 00:48:17] format applied to inline comments (Ref: 85dc3849-39)
+
