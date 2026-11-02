@@ -3888,3 +3888,5 @@
 
 * [2026-11-02 00:50:56] improve applied to inline comments (Ref: 3d8aac45-45)
 
+* [2026-11-02 00:50:56] clean applied to module structure (Ref: 3d8aac45-46)
+
