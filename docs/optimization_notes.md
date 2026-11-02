@@ -3606,3 +3606,5 @@
 
 * [2026-11-02 00:48:10] optimize applied to inline comments (Ref: 85dc3849-4)
 
+* [2026-11-02 00:48:11] format applied to internal configs (Ref: 85dc3849-5)
+
