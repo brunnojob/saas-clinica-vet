@@ -3678,3 +3678,5 @@
 
 * [2026-11-02 00:48:17] clean applied to internal configs (Ref: 85dc3849-40)
 
+* [2026-11-02 00:48:17] update applied to module structure (Ref: 85dc3849-41)
+
