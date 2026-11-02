@@ -4042,3 +4042,5 @@
 
 * [2026-11-02 00:52:15] format applied to internal configs (Ref: 3b9167a0-22)
 
+* [2026-11-02 00:52:15] improve applied to inline comments (Ref: 3b9167a0-23)
+
