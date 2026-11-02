@@ -3736,3 +3736,5 @@
 
 * [2026-11-02 00:50:23] update applied to type hints (Ref: ffde0be3-19)
 
+* [2026-11-02 00:50:23] optimize applied to internal configs (Ref: ffde0be3-20)
+
