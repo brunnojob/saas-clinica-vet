@@ -4010,3 +4010,5 @@
 
 * [2026-11-02 00:52:06] update applied to type hints (Ref: 3b9167a0-6)
 
+* [2026-11-02 00:52:07] improve applied to internal configs (Ref: 3b9167a0-7)
+
