@@ -3816,3 +3816,5 @@
 
 * [2026-11-02 00:50:48] optimize applied to type hints (Ref: 3d8aac45-9)
 
+* [2026-11-02 00:50:48] optimize applied to internal configs (Ref: 3d8aac45-10)
+
