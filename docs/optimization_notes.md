@@ -3928,3 +3928,5 @@
 
 * [2026-11-02 00:51:21] improve applied to type hints (Ref: 862ae093-15)
 
+* [2026-11-02 00:51:21] improve applied to utilities (Ref: 862ae093-16)
+
