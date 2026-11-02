@@ -3672,3 +3672,5 @@
 
 * [2026-11-02 00:48:16] improve applied to inline comments (Ref: 85dc3849-37)
 
+* [2026-11-02 00:48:16] optimize applied to internal configs (Ref: 85dc3849-38)
+
