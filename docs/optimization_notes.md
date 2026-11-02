@@ -3738,3 +3738,5 @@
 
 * [2026-11-02 00:50:23] optimize applied to internal configs (Ref: ffde0be3-20)
 
+* [2026-11-02 00:50:24] clean applied to module structure (Ref: ffde0be3-21)
+
