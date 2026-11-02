@@ -4258,3 +4258,5 @@
 
 * [2026-11-02 00:53:38] update applied to module structure (Ref: 4ad4a326-30)
 
+* [2026-11-02 00:53:38] format applied to inline comments (Ref: 4ad4a326-31)
+
