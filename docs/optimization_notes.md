@@ -3658,3 +3658,5 @@
 
 * [2026-11-02 00:48:15] update applied to module structure (Ref: 85dc3849-30)
 
+* [2026-11-02 00:48:15] improve applied to module structure (Ref: 85dc3849-31)
+
