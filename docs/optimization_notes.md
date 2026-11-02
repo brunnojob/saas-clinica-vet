@@ -4052,3 +4052,5 @@
 
 * [2026-11-02 00:52:18] improve applied to internal configs (Ref: 3b9167a0-27)
 
+* [2026-11-02 00:52:18] update applied to internal configs (Ref: 3b9167a0-28)
+
