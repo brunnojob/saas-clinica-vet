@@ -3686,3 +3686,5 @@
 
 * [2026-11-02 00:48:17] clean applied to inline comments (Ref: 85dc3849-44)
 
+* [2026-11-02 00:48:17] clean applied to module structure (Ref: 85dc3849-45)
+
