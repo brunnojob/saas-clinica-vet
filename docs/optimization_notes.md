@@ -3778,3 +3778,5 @@
 
 * [2026-11-02 00:50:29] update applied to utilities (Ref: ffde0be3-40)
 
+* [2026-11-02 00:50:30] format applied to type hints (Ref: ffde0be3-41)
+
