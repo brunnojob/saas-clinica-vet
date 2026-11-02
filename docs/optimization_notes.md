@@ -3868,3 +3868,5 @@
 
 * [2026-11-02 00:50:54] format applied to internal configs (Ref: 3d8aac45-35)
 
+* [2026-11-02 00:50:54] improve applied to inline comments (Ref: 3d8aac45-36)
+
