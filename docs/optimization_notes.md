@@ -3836,3 +3836,5 @@
 
 * [2026-11-02 00:50:50] clean applied to internal configs (Ref: 3d8aac45-19)
 
+* [2026-11-02 00:50:50] improve applied to inline comments (Ref: 3d8aac45-20)
+
