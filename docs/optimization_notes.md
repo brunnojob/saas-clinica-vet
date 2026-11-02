@@ -4116,3 +4116,5 @@
 
 * [2026-11-02 00:52:55] format applied to type hints (Ref: 02ebce16-9)
 
+* [2026-11-02 00:52:55] clean applied to internal configs (Ref: 02ebce16-10)
+
