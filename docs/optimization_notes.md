@@ -4024,3 +4024,5 @@
 
 * [2026-11-02 00:52:09] improve applied to type hints (Ref: 3b9167a0-13)
 
+* [2026-11-02 00:52:10] improve applied to internal configs (Ref: 3b9167a0-14)
+
