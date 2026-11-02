@@ -3612,3 +3612,5 @@
 
 * [2026-11-02 00:48:11] improve applied to internal configs (Ref: 85dc3849-7)
 
+* [2026-11-02 00:48:11] improve applied to type hints (Ref: 85dc3849-8)
+
