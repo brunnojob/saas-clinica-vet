@@ -3882,3 +3882,5 @@
 
 * [2026-11-02 00:50:56] format applied to type hints (Ref: 3d8aac45-42)
 
+* [2026-11-02 00:50:56] clean applied to internal configs (Ref: 3d8aac45-43)
+
