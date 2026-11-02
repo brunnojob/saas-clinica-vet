@@ -4244,3 +4244,5 @@
 
 * [2026-11-02 00:53:36] format applied to module structure (Ref: 4ad4a326-23)
 
+* [2026-11-02 00:53:36] improve applied to inline comments (Ref: 4ad4a326-24)
+
