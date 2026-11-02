@@ -3654,3 +3654,5 @@
 
 * [2026-11-02 00:48:15] format applied to utilities (Ref: 85dc3849-28)
 
+* [2026-11-02 00:48:15] improve applied to inline comments (Ref: 85dc3849-29)
+
