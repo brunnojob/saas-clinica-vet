@@ -3702,3 +3702,5 @@
 
 * [2026-11-02 00:50:17] optimize applied to utilities (Ref: ffde0be3-2)
 
+* [2026-11-02 00:50:17] update applied to internal configs (Ref: ffde0be3-3)
+
