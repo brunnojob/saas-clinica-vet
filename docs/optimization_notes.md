@@ -4274,3 +4274,5 @@
 
 * [2026-11-02 00:53:40] improve applied to inline comments (Ref: 4ad4a326-38)
 
+* [2026-11-02 00:53:47] improve applied to internal configs (Ref: 4ad4a326-39)
+
