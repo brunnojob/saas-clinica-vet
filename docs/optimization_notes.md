@@ -3758,3 +3758,5 @@
 
 * [2026-11-02 00:50:25] improve applied to utilities (Ref: ffde0be3-30)
 
+* [2026-11-02 00:50:25] update applied to internal configs (Ref: ffde0be3-31)
+
