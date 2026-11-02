@@ -3964,3 +3964,5 @@
 
 * [2026-11-02 00:51:29] format applied to internal configs (Ref: 862ae093-33)
 
+* [2026-11-02 00:51:29] improve applied to module structure (Ref: 862ae093-34)
+
