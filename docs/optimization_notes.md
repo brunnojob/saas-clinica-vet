@@ -3620,3 +3620,5 @@
 
 * [2026-11-02 00:48:12] update applied to utilities (Ref: 85dc3849-11)
 
+* [2026-11-02 00:48:12] clean applied to type hints (Ref: 85dc3849-12)
+
