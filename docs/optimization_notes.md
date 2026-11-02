@@ -3892,3 +3892,5 @@
 
 * [2026-11-02 00:50:56] format applied to module structure (Ref: 3d8aac45-47)
 
+* [2026-11-02 00:50:57] improve applied to inline comments (Ref: 3d8aac45-48)
+
