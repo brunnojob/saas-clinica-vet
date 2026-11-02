@@ -4284,3 +4284,5 @@
 
 * [2026-11-02 00:53:53] format applied to internal configs (Ref: 4ad4a326-43)
 
+* [2026-11-02 00:53:54] improve applied to module structure (Ref: 4ad4a326-44)
+
