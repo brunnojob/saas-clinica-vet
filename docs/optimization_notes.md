@@ -4196,3 +4196,5 @@
 
 * [2026-11-02 00:53:09] format applied to utilities (Ref: 02ebce16-49)
 
+* [2026-11-02 00:53:09] update applied to internal configs (Ref: 02ebce16-50)
+
