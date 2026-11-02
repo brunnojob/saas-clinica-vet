@@ -4100,3 +4100,5 @@
 
 * [2026-11-02 00:52:52] clean applied to type hints (Ref: 02ebce16-1)
 
+* [2026-11-02 00:52:52] clean applied to utilities (Ref: 02ebce16-2)
+
