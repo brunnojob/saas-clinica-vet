@@ -3708,3 +3708,5 @@
 
 * [2026-11-02 00:50:17] optimize applied to internal configs (Ref: ffde0be3-5)
 
+* [2026-11-02 00:50:17] format applied to type hints (Ref: ffde0be3-6)
+
