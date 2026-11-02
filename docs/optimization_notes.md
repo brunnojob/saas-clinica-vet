@@ -4200,3 +4200,5 @@
 
 * [2026-11-02 00:53:26] format applied to internal configs (Ref: 4ad4a326-1)
 
+* [2026-11-02 00:53:26] improve applied to internal configs (Ref: 4ad4a326-2)
+
