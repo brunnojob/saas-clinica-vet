@@ -3922,3 +3922,5 @@
 
 * [2026-11-02 00:51:20] format applied to inline comments (Ref: 862ae093-12)
 
+* [2026-11-02 00:51:20] improve applied to inline comments (Ref: 862ae093-13)
+
