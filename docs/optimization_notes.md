@@ -3746,3 +3746,5 @@
 
 * [2026-11-02 00:50:24] format applied to utilities (Ref: ffde0be3-24)
 
+* [2026-11-02 00:50:24] improve applied to utilities (Ref: ffde0be3-25)
+
